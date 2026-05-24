@@ -540,7 +540,7 @@ function IntroScreen({ stores, onPick }) {
 /* ================================================================
    主畫面：Stage 第 N 款酒
    ================================================================ */
-function StageScreen({ sake, index, total, onStartEval, opened, setOpened }) {
+function StageScreen({ sake, index, total, onStartEval, onBackToIntro, opened, setOpened }) {
   const [sheet, setSheet] = useState(null); // story / aroma / taste / pairing / region
 
   // 進入下一款酒重設「開瓶」狀態
@@ -559,9 +559,15 @@ function StageScreen({ sake, index, total, onStartEval, opened, setOpened }) {
       {/* 頂部進度 */}
       <div className="px-5 pt-6 pb-2">
         <div className="flex items-center justify-between mb-2">
-          <span className="text-xs text-muted tracking-widest">
-            #{String(index + 1).padStart(2,"0")} / 共 {total} 款
-          </span>
+          {index === 0 ? (
+            <button className="text-xs text-muted tracking-widest" onClick={onBackToIntro}>
+              ← 重新選主理店
+            </button>
+          ) : (
+            <span className="text-xs text-muted tracking-widest">
+              #{String(index + 1).padStart(2,"0")} / 共 {total} 款
+            </span>
+          )}
           <span className="text-xs text-gold font-bold">{sake.ssiQuadrant}</span>
         </div>
         <div className="progress-pill">
@@ -733,6 +739,8 @@ function EvaluationScreen({ sake, initial, onSave, onCancel }) {
   const [alcohol, setAlcohol] = useState(initial?.alcohol || 3);
   const [pair, setPair] = useState(initial?.pair || []);
   const [pairCustom, setPairCustom] = useState(initial?.pairCustom || "");
+  const [vesselImpact, setVesselImpact] = useState(initial?.vesselImpact || 3);
+  const [vesselType, setVesselType] = useState(initial?.vesselType || "");
   const [note, setNote] = useState(initial?.note || "");
   const [rating, setRating] = useState(initial?.rating || 0);
   const [remain, setRemain] = useState(30);
@@ -757,7 +765,8 @@ function EvaluationScreen({ sake, initial, onSave, onCancel }) {
     { title: "4. 酒體重量", icon: "⚖️" },
     { title: "5. 酒精衝擊", icon: "🔥" },
     { title: "6. 料理配對", icon: "🥢" },
-    { title: "7. 評語 & 意願", icon: "⭐" },
+    { title: "7. 杯型影響", icon: "🍷" },
+    { title: "8. 評語 & 意願", icon: "⭐" },
   ];
 
   function toggle(arr, setter, v) {
@@ -766,13 +775,13 @@ function EvaluationScreen({ sake, initial, onSave, onCancel }) {
 
   function canNext() {
     if (step === 0) return aroma.length > 0 || (aromaCustom && aromaCustom.trim());
-    if (step === 6) return rating >= 1;
+    if (step === 7) return rating >= 1;
     return true;
   }
 
   function next() {
     if (!canNext()) return;
-    if (step === 6) {
+    if (step === 7) {
       // 提交
       onSave({
         sakeId: sake.id,
@@ -780,6 +789,7 @@ function EvaluationScreen({ sake, initial, onSave, onCancel }) {
         sweetness, acidityScore,
         body, alcohol,
         pair, pairCustom,
+        vesselImpact, vesselType,
         note, rating,
         completedAt: new Date().toISOString(),
       });
@@ -887,6 +897,26 @@ function EvaluationScreen({ sake, initial, onSave, onCancel }) {
         )}
         {step === 6 && (
           <div>
+            <p className="text-sm text-muted mb-4 text-center">杯型對香氣和風味的影響程度？1 = 幾乎沒有，5 = 非常明顯</p>
+            <input
+              type="range" min="1" max="5" value={vesselImpact}
+              className="sake-range"
+              onChange={e => setVesselImpact(Number(e.target.value))}
+            />
+            <div className="flex justify-between text-xs text-muted mt-2">
+              <span>幾乎沒有</span><b className="text-gold text-xl">{vesselImpact}</b><span>非常明顯</span>
+            </div>
+            <input
+              type="text"
+              className="w-full mt-5 px-4 py-3 rounded-full border border-gray-200 bg-white text-sm"
+              placeholder="您是用哪種杯型（選填）"
+              value={vesselType}
+              onChange={e => setVesselType(e.target.value)}
+            />
+          </div>
+        )}
+        {step === 7 && (
+          <div>
             <p className="text-sm text-muted mb-3 text-center">採購意願（1~10 星，至少 1 星）</p>
             <StarRating value={rating} onChange={setRating} />
             <p className="text-center text-gold font-bold mt-2">{rating || "?"} / 10</p>
@@ -910,7 +940,7 @@ function EvaluationScreen({ sake, initial, onSave, onCancel }) {
           disabled={!canNext()}
           onClick={next}
         >
-          {step === 6 ? "完成評鑑 ✓" : "下一步 →"}
+          {step === 7 ? "完成評鑑 ✓" : "下一步 →"}
         </button>
       </div>
     </div>
@@ -951,11 +981,14 @@ function DiscussionScreen({ sake, isLast, onNext, onFinish }) {
    ================================================================ */
 const MOTIVE_OPTS  = ["風味稀有度","價格","在地故事強","季節限定","視覺/包裝佳"];
 const STRATEGY_OPTS = ["套餐搭配","單點推薦","常客驚喜","新客入門","活動限定","盲飲挑戰"];
+const VESSEL_CHANGE_OPTS = ["香氣更集中","風味層次更清楚","口感更細緻","視覺呈現更有質感","整體品飲體驗更完整"];
 
 function CartScreen({ sakes, evals, cart, setCart, onSubmit, onBack }) {
   const [step, setStep] = useState(1);
   const [motives, setMotives] = useState([]);
   const [strategies, setStrategies] = useState([]);
+  const [vesselChanges, setVesselChanges] = useState([]);
+  const [vesselInterest, setVesselInterest] = useState("");
   const [customMotive, setCustomMotive] = useState("");
   const [customStrategy, setCustomStrategy] = useState("");
 
@@ -980,6 +1013,8 @@ function CartScreen({ sakes, evals, cart, setCart, onSubmit, onBack }) {
       motives,
       strategies,
       ranking: motives,
+      vesselChanges,
+      vesselInterest,
     });
   }
 
@@ -1060,6 +1095,19 @@ function CartScreen({ sakes, evals, cart, setCart, onSubmit, onBack }) {
             />
           </div>
 
+          <div className="glass-panel p-4">
+            <p className="text-xs font-bold text-gold tracking-widest mb-3">器皿帶來的變化（複選）</p>
+            <div className="flex flex-wrap gap-2">
+              {VESSEL_CHANGE_OPTS.map(m => (
+                <span
+                  key={m}
+                  className={`chip jelly-btn ${vesselChanges.includes(m) ? "chip-selected" : ""}`}
+                  onClick={() => toggle(vesselChanges, setVesselChanges, m)}
+                >{m}</span>
+              ))}
+            </div>
+          </div>
+
           <button
             className="jelly-btn btn-gold w-full"
             onClick={() => setStep(2)}
@@ -1075,6 +1123,7 @@ function CartScreen({ sakes, evals, cart, setCart, onSubmit, onBack }) {
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-bold leading-tight break-word">{s.name}</p>
                 <p className="text-[10px] text-muted">{s.brewery}</p>
+                <p className="text-xs font-bold text-gold">NT$ {s.price.toLocaleString("en-US")}</p>
                 {evals[s.id]?.rating && (
                   <p className="text-[11px] text-gold">★ {evals[s.id].rating}/10</p>
                 )}
@@ -1095,6 +1144,19 @@ function CartScreen({ sakes, evals, cart, setCart, onSubmit, onBack }) {
           <div className="text-center text-sm text-muted mb-2">
             共 <b className="text-gold text-lg">{totalBottles}</b> 瓶
           </div>
+          <div className="glass-panel p-4">
+            <p className="text-xs font-bold text-gold tracking-widest mb-3">器皿購買意願</p>
+            <p className="text-sm text-muted mb-3">有興趣了解更多</p>
+            <div className="grid grid-cols-2 gap-2">
+              {["是","否"].map(choice => (
+                <button
+                  key={choice}
+                  className={`jelly-btn btn-outline ${vesselInterest === choice ? "choice-selected" : ""}`}
+                  onClick={() => setVesselInterest(choice)}
+                >{choice}</button>
+              ))}
+            </div>
+          </div>
           <div className="flex gap-3">
             <button
               className="jelly-btn btn-outline flex-1"
@@ -1112,50 +1174,90 @@ function CartScreen({ sakes, evals, cart, setCart, onSubmit, onBack }) {
 }
 
 /* ================================================================
-   主畫面：LiveWall 統計牆（mock）
+   主畫面：LiveWall 統計牆
    ================================================================ */
-function LiveWallScreen({ sakes, onRestart }) {
-  // mock 數據
-  const mockStats = sakes.map((s, i) => ({
-    id: s.id,
-    name: s.name,
-    avgRating: (6 + Math.sin(i * 1.7) * 1.8 + Math.random() * 1.2).toFixed(1),
-    topAroma: s.aromaTags[0],
-    bottles: 4 + Math.floor(Math.random() * 12),
-  }));
+function LiveWallScreen({ sakes, onRestart, statsEndpoint }) {
+  const [stats, setStats] = useState(null);
+  const [loading, setLoading] = useState(Boolean(statsEndpoint));
+  const [error, setError] = useState("");
+
+  const fetchStats = useCallback(() => {
+    if (!statsEndpoint) {
+      setStats(null);
+      setLoading(false);
+      return;
+    }
+    setLoading(true);
+    setError("");
+    fetch(`${statsEndpoint}${statsEndpoint.includes("?") ? "&" : "?"}mode=stats`)
+      .then(r => r.json())
+      .then(data => {
+        if (data.status && data.status !== "ok") throw new Error(data.error || "stats failed");
+        setStats(data);
+      })
+      .catch(err => {
+        console.error("[sake stats] fetch failed", err);
+        setStats(null);
+        setError("目前讀不到活動數據");
+      })
+      .finally(() => setLoading(false));
+  }, [statsEndpoint]);
+
+  useEffect(() => { fetchStats(); }, [fetchStats]);
+
+  const rows = (stats?.sakeRanking || [])
+    .filter(row => (Number(row.totalBottles) || 0) > 0 || (Number(row.avgIntent) || 0) > 0)
+    .sort((a, b) => {
+      const bottleDiff = (Number(b.totalBottles) || 0) - (Number(a.totalBottles) || 0);
+      if (bottleDiff !== 0) return bottleDiff;
+      return (Number(b.avgIntent) || 0) - (Number(a.avgIntent) || 0);
+    });
+  const hasData = rows.length > 0;
 
   return (
     <div className="fade-in px-5 pt-6 pb-12">
-      <div className="text-center mb-3">
-        <span className="mock-tag">📊 示意統計（活動結束後更新）</span>
-      </div>
       <h2 className="text-2xl font-bold text-center mb-1">統計牆</h2>
-      <p className="text-xs text-muted text-center mb-6">全場 16 位參與者的評鑑彙整（模擬數據）</p>
+      <p className="text-xs text-muted text-center mb-6">
+        收到的活動數據會顯示瓶數與採購意願評分
+      </p>
 
-      <div className="space-y-3">
-        {mockStats
-          .sort((a, b) => b.avgRating - a.avgRating)
-          .map((row, idx) => {
-            const sake = sakes.find(x => x.id === row.id);
-            const halo = ssiQuadrantKey(sake.ssi);
+      {loading && (
+        <div className="glass-panel p-6 text-center text-sm text-muted">讀取活動數據中...</div>
+      )}
+
+      {!loading && !hasData && (
+        <div className="glass-panel p-6 text-center">
+          <p className="font-bold text-ink">沒有數據</p>
+          <p className="text-xs text-muted mt-2">{error || "目前尚未收到活動提交資料。"}</p>
+        </div>
+      )}
+
+      {!loading && hasData && (
+        <div className="space-y-3">
+          {rows.map((row, idx) => {
+            const sake = sakes.find(x => String(x.id) === String(row.sakeId)) || {};
             return (
-              <div key={row.id} className="glass-panel p-4 flex items-center gap-3">
+              <div key={row.sakeId} className="glass-panel p-4 flex items-center gap-3">
                 <span className="text-2xl font-bold text-gold w-8">{idx + 1}</span>
-                <img src={sake.bottleImage} className="w-10 h-16 object-contain" alt="" />
+                {sake.bottleImage && <img src={sake.bottleImage} className="w-10 h-16 object-contain" alt="" />}
                 <div className="flex-1 min-w-0">
-                  <p className="font-bold text-sm break-word">{row.name}</p>
-                  <p className="text-[11px] text-muted">{row.topAroma} · {sake.ssiQuadrant}</p>
+                  <p className="font-bold text-sm break-word">{row.sakeName || sake.name}</p>
+                  <p className="text-[11px] text-muted">{sake.ssiQuadrant || "活動數據"}</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-gold font-bold text-lg">★ {row.avgRating}</p>
-                  <p className="text-[10px] text-muted">{row.bottles} 瓶</p>
+                  <p className="text-gold font-bold text-lg">★ {Number(row.avgIntent || 0).toFixed(1)}</p>
+                  <p className="text-[10px] text-muted">{Number(row.totalBottles) || 0} 瓶</p>
                 </div>
               </div>
             );
           })}
-      </div>
+        </div>
+      )}
 
       <div className="mt-8 space-y-2">
+        <button className="jelly-btn btn-outline w-full" onClick={fetchStats}>
+          重新整理統計
+        </button>
         <button className="jelly-btn btn-gold w-full" onClick={onRestart}>
           🔄 重新開始（清除本機資料）
         </button>
@@ -1235,6 +1337,8 @@ function App({ data }) {
         acidityScore: rec.acidityScore || 0,
         body: rec.body || 0,
         alcohol: rec.alcohol || 0,
+        vesselImpact: rec.vesselImpact || 0,
+        vesselType: rec.vesselType || "",
         pairings: rec.pair || [],
         otherPairing: rec.pairCustom || "",
         comment: rec.note || "",
@@ -1255,6 +1359,8 @@ function App({ data }) {
       motivations: extra.motives || [],
       recommendStrategies: extra.strategies || [],
       ranking: extra.ranking || extra.motives || [],
+      vesselChanges: extra.vesselChanges || [],
+      vesselInterest: extra.vesselInterest || "",
     };
     const endpoint = window.SAKE_ORDER_ENDPOINT;
     if (endpoint) {
@@ -1276,6 +1382,17 @@ function App({ data }) {
     setPhase("intro");
     setVenue(null);
     setSakeIdx(0);
+    setEvals({});
+    setCart({});
+  }
+
+  function backToIntroFromFirstSake() {
+    setPhase("intro");
+    setVenue(null);
+    setSakeIdx(0);
+    setOpened(false);
+    setShowEval(false);
+    setShowDiscussion(false);
     setEvals({});
     setCart({});
   }
@@ -1305,6 +1422,7 @@ function App({ data }) {
           opened={opened}
           setOpened={setOpened}
           onStartEval={() => setShowEval(true)}
+          onBackToIntro={backToIntroFromFirstSake}
         />
       )}
 
@@ -1340,7 +1458,7 @@ function App({ data }) {
       )}
 
       {phase === "livewall" && (
-        <LiveWallScreen sakes={sakes} onRestart={restart} />
+        <LiveWallScreen sakes={sakes} onRestart={restart} statsEndpoint={window.SAKE_ORDER_ENDPOINT} />
       )}
     </div>
   );
@@ -1349,7 +1467,7 @@ function App({ data }) {
 /* ================================================================
    啟動
    ================================================================ */
-fetch("./sake_data.json?v=2.3")
+fetch("./sake_data.json?v=2.4")
   .then(r => r.json())
   .then(data => {
     const root = ReactDOM.createRoot(document.getElementById("root"));
