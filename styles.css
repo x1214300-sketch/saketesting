@@ -750,6 +750,61 @@ input[type="range"].sake-range::-webkit-slider-thumb {
   to   { transform: translateY(0); }
 }
 
+.completion-celebration {
+  position: relative;
+  overflow: hidden;
+  max-width: 520px;
+  width: 100%;
+  margin: 0 auto;
+}
+.completion-celebration::before {
+  content: "";
+  position: absolute;
+  inset: -35%;
+  background:
+    radial-gradient(circle at 50% 45%, rgba(184,134,11,0.18), transparent 34%),
+    radial-gradient(circle at 20% 25%, rgba(232,165,176,0.18), transparent 20%),
+    radial-gradient(circle at 78% 28%, rgba(91,141,124,0.14), transparent 20%);
+  animation: completionGlow 4.6s ease-in-out infinite;
+  pointer-events: none;
+}
+.completion-celebration > * {
+  position: relative;
+  z-index: 1;
+}
+.completion-mark {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 999px;
+  background: linear-gradient(145deg, #d4af37, #b8860b);
+  color: white;
+  font-size: 34px;
+  font-weight: 800;
+  box-shadow: 0 16px 32px rgba(184,134,11,0.24);
+}
+.completion-sparkles span {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--gold);
+  opacity: 0.72;
+  animation: sparkleFloat 3.2s ease-in-out infinite;
+}
+.completion-sparkles span:nth-child(1) { left: 18%; top: 26%; }
+.completion-sparkles span:nth-child(2) { right: 20%; top: 18%; animation-delay: 0.5s; }
+.completion-sparkles span:nth-child(3) { left: 72%; bottom: 28%; animation-delay: 1s; }
+@keyframes completionGlow {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.04); opacity: 1; }
+}
+@keyframes sparkleFloat {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0.45; }
+  50% { transform: translateY(-12px) scale(1.35); opacity: 0.95; }
+}
+
 /* 360 度旋轉的小指示 */
 .spin-slow { animation: spin 6s linear infinite; }
 @keyframes spin { from { transform: rotate(0); } to { transform: rotate(360deg); } }

@@ -1176,94 +1176,24 @@ function CartScreen({ sakes, evals, cart, setCart, onSubmit, onBack }) {
 /* ================================================================
    主畫面：LiveWall 統計牆
    ================================================================ */
-function LiveWallScreen({ sakes, onRestart, statsEndpoint }) {
-  const [stats, setStats] = useState(null);
-  const [loading, setLoading] = useState(Boolean(statsEndpoint));
-  const [error, setError] = useState("");
-
-  const fetchStats = useCallback(() => {
-    if (!statsEndpoint) {
-      setStats(null);
-      setLoading(false);
-      return;
-    }
-    setLoading(true);
-    setError("");
-    fetch(`${statsEndpoint}${statsEndpoint.includes("?") ? "&" : "?"}mode=stats`)
-      .then(r => r.json())
-      .then(data => {
-        if (data.status && data.status !== "ok") throw new Error(data.error || "stats failed");
-        setStats(data);
-      })
-      .catch(err => {
-        console.error("[sake stats] fetch failed", err);
-        setStats(null);
-        setError("目前讀不到活動數據");
-      })
-      .finally(() => setLoading(false));
-  }, [statsEndpoint]);
-
-  useEffect(() => { fetchStats(); }, [fetchStats]);
-
-  const rows = (stats?.sakeRanking || [])
-    .filter(row => (Number(row.totalBottles) || 0) > 0 || (Number(row.avgIntent) || 0) > 0)
-    .sort((a, b) => {
-      const bottleDiff = (Number(b.totalBottles) || 0) - (Number(a.totalBottles) || 0);
-      if (bottleDiff !== 0) return bottleDiff;
-      return (Number(b.avgIntent) || 0) - (Number(a.avgIntent) || 0);
-    });
-  const hasData = rows.length > 0;
-
+function LiveWallScreen({ onRestart }) {
   return (
-    <div className="fade-in px-5 pt-6 pb-12">
-      <h2 className="text-2xl font-bold text-center mb-1">統計牆</h2>
-      <p className="text-xs text-muted text-center mb-6">
-        收到的活動數據會顯示瓶數與採購意願評分
-      </p>
-
-      {loading && (
-        <div className="glass-panel p-6 text-center text-sm text-muted">讀取活動數據中...</div>
-      )}
-
-      {!loading && !hasData && (
-        <div className="glass-panel p-6 text-center">
-          <p className="font-bold text-ink">沒有數據</p>
-          <p className="text-xs text-muted mt-2">{error || "目前尚未收到活動提交資料。"}</p>
+    <div className="fade-in px-5 pt-10 pb-12 min-h-[calc(100vh-4rem)] flex flex-col justify-center">
+      <div className="completion-celebration glass-panel p-7 text-center">
+        <div className="completion-sparkles" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-      )}
-
-      {!loading && hasData && (
-        <div className="space-y-3">
-          {rows.map((row, idx) => {
-            const sake = sakes.find(x => String(x.id) === String(row.sakeId)) || {};
-            return (
-              <div key={row.sakeId} className="glass-panel p-4 flex items-center gap-3">
-                <span className="text-2xl font-bold text-gold w-8">{idx + 1}</span>
-                {sake.bottleImage && <img src={sake.bottleImage} className="w-10 h-16 object-contain" alt="" />}
-                <div className="flex-1 min-w-0">
-                  <p className="font-bold text-sm break-word">{row.sakeName || sake.name}</p>
-                  <p className="text-[11px] text-muted">{sake.ssiQuadrant || "活動數據"}</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-gold font-bold text-lg">★ {Number(row.avgIntent || 0).toFixed(1)}</p>
-                  <p className="text-[10px] text-muted">{Number(row.totalBottles) || 0} 瓶</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      )}
-
-      <div className="mt-8 space-y-2">
-        <button className="jelly-btn btn-outline w-full" onClick={fetchStats}>
-          重新整理統計
-        </button>
-        <button className="jelly-btn btn-gold w-full" onClick={onRestart}>
-          🔄 重新開始（清除本機資料）
-        </button>
-        <p className="text-center text-[11px] text-muted">
-          完成時間 · 感謝您今晚的參與
+        <div className="completion-mark mx-auto mb-5">✓</div>
+        <p className="text-xs font-bold text-gold tracking-widest mb-3">採購單送出完成</p>
+        <h2 className="text-3xl font-bold mb-3">謝謝填寫</h2>
+        <p className="text-sm text-muted leading-relaxed mb-7">
+          您的採購單已送出，感謝今晚的參與。
         </p>
+        <button className="jelly-btn btn-gold w-full" onClick={onRestart}>
+          重新開始
+        </button>
       </div>
     </div>
   );
