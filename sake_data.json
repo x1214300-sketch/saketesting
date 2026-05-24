@@ -1,0 +1,885 @@
+{
+  "_meta": {
+    "version": "1.4",
+    "lastUpdated": "2026-05-22",
+    "verifiedNotes": "酒款核心資料來自客戶 Excel，並於 2026-05-21 由 AI 顧問依據酒造官網／SAKETIME／Sakenomy／酒販店產品頁進行交叉驗證。產區景點與名產來自官方觀光網。SSI 4 タイプ分類依 SSI（日本酒サービス研究會・酒匠研究會連合會）官方判定準則對齊：薰=香高味輕、爽=香低味輕、醇=香低味濃、熟=香高味濃（古酒/長期熟成、生酒不歸熟酒）。料理搭配同時兼顧 SSI 標準推薦與個別酒款特性。",
+    "ssiSource": "https://ssi-sake.jp/ — SSI 4 タイプ分類法（薰酒／爽酒／醇酒／熟酒）",
+    "priceNote": "所有價格為測試值 9999，待主辦人補真實定價",
+    "verificationLog": [
+      "[#2 Hizirizm 渡舟70 GOTH] abv: 14% → 15.7% (依據: https://www.sakaya-kurihara.jp/item/2015ho-1797/)",
+      "[#4 夜明け前 辰の吟] acidity 1.1 標記未確認；SMV +5 經 Sakenomy 確認 (依據: https://www.sakenomy.jp/sake/TST0000001882/)",
+      "[#5 Shirakiku DAY DREAM] rice: 夢心地 → 夢ごこち (依據: https://www.jizake.com/c/sake/shirasugi/ns380027c00)",
+      "[#5 Shirakiku DAY DREAM] smv: null → -25 (依據: 同上)",
+      "[#5 Shirakiku DAY DREAM] acidity: null → 2.8 (依據: 同上)",
+      "[#5 Shirakiku DAY DREAM] abv: 14% → 14.5% (依據: 同上)",
+      "[#5 Shirakiku DAY DREAM] breweryStorySlides[1] desc 修正：DAY DREAM 用『丹後夢ごこち』而非單純越光米 (依據: 同上)",
+      "[#6 夜ふかし 和風薩摩芋] 該特定 SKU 未在酒造官網與主流通路找到正式頁面，標記為人工確認",
+      "[#7 山名酒造 K] +17 超辛口 / 80%精米 / 1年熟成 為客戶 Excel 提供之規格，山名酒造官網／SAKETIME 未列同名 SKU；蔵付酵母＋生酛系列存在 → 標記為人工確認",
+      "[v1.3] 酒造故事依全部酒款資訊.xlsx 擴充為每款 3 張圖文卡，並新增 public/酒造故事照片 圖片路徑",
+      "[v1.4] 餐點搭配、觀光景點、當地名產新增圖片路徑，並新增 public/餐點搭配照片、public/產區介紹照片。"
+    ],
+    "storyImageSources": {
+      "池田酒造": [
+        "https://ikekumo.com/about/",
+        "https://ikekumo.com/outline/"
+      ],
+      "聖酒造": [
+        "https://www.hijiri-sake.co.jp/pages/about",
+        "https://www.gunma-saketsugu.jp/kura/003/"
+      ],
+      "虎屋本店": [
+        "https://toratora.co.jp/"
+      ],
+      "小野酒造": [
+        "https://yoakemae-ono.com/"
+      ],
+      "白杉酒造": [
+        "https://japansake.or.jp/sakagura/jp/kyoto/shirasugi-shuzou/",
+        "https://www.uminokyoto.jp/gourmet/detail.php?gourmet_id=53"
+      ],
+      "麻原酒造": [
+        "https://japansake.or.jp/sakagura/jp/saitama/asahara-shuzou/"
+      ],
+      "山名酒造": [
+        "https://okutamba.co.jp/html/access/",
+        "https://www.tambacity-kankou.jp/shop/magokoro_61/"
+      ]
+    }
+  },
+  "stores": [
+    "鮨一田",
+    "明壽司",
+    "稻鮨",
+    "鮨二七",
+    "山崎 割烹",
+    "牛花 板前燒肉割烹",
+    "山野",
+    "御神烹"
+  ],
+  "sakes": [
+    {
+      "id": 1,
+      "bottleImage": "bottles/01_casareccio.png",
+      "name": "加佐一陽 CASARECCIO",
+      "fullName": "加佐一陽 CASARECCIO 純米生原酒",
+      "type": "純米生原酒",
+      "volume": "720ml",
+      "region": "京都府 舞鶴市",
+      "brewery": "池田酒造",
+      "rice": "雄町",
+      "polish": "60%",
+      "abv": "13%",
+      "smv": null,
+      "smvLabel": "未公開",
+      "acidity": null,
+      "acidityLabel": "未公開",
+      "price": 9999,
+      "ssi": {
+        "x": 40,
+        "y": 40
+      },
+      "ssiQuadrant": "爽酒",
+      "ssiReason": "13% 低酒精 + 薄濁 + 微氣泡 + 白麴柑橘酸感 → 符合 SSI 爽酒『香低味輕清爽』定義",
+      "aromaTags": [
+        "🍋 柑橘酸感",
+        "🫧 微氣泡",
+        "🌾 雄町米香",
+        "🥛 乳酸柔旨"
+      ],
+      "aromaDesc": "白麴釀製帶來明亮的檸檬酸與柑橘香，雄町米的圓潤甜旨在薄濁中柔和展現，輕盈如初夏微風。",
+      "tasteDesc": "入口滑順，明亮酸感托起甜旨味，輕微氣泡感增添躍動，整體風格輕快易飲。CASARECCIO 義大利文意指『家常、手作』，象徵自然親切的釀造風格。",
+      "breweryStorySlides": [
+        {
+          "title": "海之京都的小而堅實酒藏",
+          "desc": "池田酒造於 1879 年創立於京都舞鶴，由良川流向日本海的土地讓酒款自然帶著海港城市的清爽感。酒造曾在昭和末期停釀 20 餘年，後來重新出發，選擇以小規模、純米酒為核心，慢慢建立「池田酒造的味道」。",
+          "img": "酒造故事照片/池田-1.jpg",
+          "source": "既有提供圖片 / 池田酒造官方資料"
+        },
+        {
+          "title": "看得見農家的米，釀得出土地的甜",
+          "desc": "酒造重視與農家面對面的關係，逐步轉向使用舞鶴在地低農藥米，並相信清酒不是單純加工品，而是土地與農業的延伸。無添加釀造酒精與酵素劑，靠米、麴、水與手工細節引出自然甜味與旨味。",
+          "img": "酒造故事照片/池田-2.jpg",
+          "source": "既有提供圖片 / 池田酒造官方資料"
+        },
+        {
+          "title": "CASARECCIO 的家常手作感",
+          "desc": "CASARECCIO 是義大利文「家常、手作」之意。這款酒以岡山雄町搭配白麴，讓檸檬般酸感、薄濁柔旨與 13% 低酒精交織，像一杯能在微暖季節輕鬆開場的餐前酒。",
+          "img": "酒造故事照片/池田-3.jpg",
+          "source": "https://ikekumo.com/about/"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "舞鶴生鮮海鮮丼",
+          "type": "在地性搭配",
+          "reason": "酒造在舞鶴港旁，酒款的柑橘酸感能引出剛上岸海鮮的甘甜，氣泡感清爽解膩。",
+          "img": "餐點搭配照片/01-pair-1.jpg"
+        },
+        {
+          "title": "鹽烤香魚／白燒鰻",
+          "type": "風味平衡",
+          "reason": "薄濁特有的柔和甜旨能與烤魚的微苦內臟形成絕妙平衡，乳酸感增添層次。",
+          "img": "餐點搭配照片/01-pair-2.jpg"
+        },
+        {
+          "title": "檸檬炸小魚／海鮮 Fritto Misto",
+          "img": "餐點搭配照片/01-pair-3.jpg",
+          "reason": "酥炸海鮮的油脂需要明亮酸度收尾，CASARECCIO 的檸檬感、薄濁柔旨與低酒精能讓第一口更開胃。",
+          "type": "清爽開胃"
+        }
+      ],
+      "discussionPrompt": "餐飲場景提問：客人想點解膩的餐前酒，您會如何介紹這款加佐一陽 CASARECCIO？",
+      "sightseeing": [
+        {
+          "title": "舞鶴赤れんがパーク（紅磚倉庫群）",
+          "desc": "明治時代舊海軍鎮守府的歷史建築群，是日劇與電影常見拍攝地。",
+          "img": "產區介紹照片/01-sight-1.jpg"
+        },
+        {
+          "title": "五老ヶ岳展望台",
+          "desc": "360 度全景被選為『近畿百景第 1 位』，可一覽舞鶴灣與市區。",
+          "img": "產區介紹照片/01-sight-2.jpg"
+        },
+        {
+          "title": "舞鶴灣",
+          "img": "產區介紹照片/01-sight-3.jpg",
+          "desc": "舞鶴面向日本海，港灣與海風形塑出這款酒適合海鮮料理的清亮印象。"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "舞鶴蟹／丹後牡蠣",
+          "desc": "舞鶴港為京都府最大漁港，冬季舞鶴蟹與丹後牡蠣為日本海珍味。",
+          "img": "產區介紹照片/01-spec-1.jpg"
+        },
+        {
+          "title": "万願寺甘とう（萬願寺甜辣椒）",
+          "desc": "舞鶴發祥的京都品牌蔬菜，肉厚甘甜微辣。",
+          "img": "產區介紹照片/01-spec-2.jpg"
+        },
+        {
+          "title": "丹後米",
+          "img": "產區介紹照片/丹後越光米.jpg",
+          "desc": "丹後地區稻作與海港飲食並存，米香與鮮味是餐桌上最有地方感的連結。"
+        }
+      ],
+      "_verified": {
+        "ssi": true,
+        "brewery": true,
+        "region": true,
+        "sources": [
+          "https://ikekumo.com/",
+          "https://www.saketime.jp/brands/5738/",
+          "https://sasas.jp/sake/ikekumo"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "bottleImage": "bottles/04_yoakemae.png",
+      "name": "夜明け前 辰の吟",
+      "fullName": "夜明け前 辰の吟 特別本釀造 生酒 720ml",
+      "type": "特別本釀造 生酒",
+      "volume": "720ml",
+      "region": "長野縣 辰野町",
+      "brewery": "小野酒造",
+      "rice": "兵庫県産 山田錦",
+      "polish": "60%",
+      "abv": "15%",
+      "smv": 5,
+      "smvLabel": "+5",
+      "acidity": 1.1,
+      "acidityLabel": "1.1",
+      "price": 9999,
+      "ssi": {
+        "x": 35,
+        "y": 55
+      },
+      "ssiQuadrant": "爽酒（接近薰酒）",
+      "ssiReason": "特別本釀造在 SSI 標準裡基準屬爽酒。雖具備吟釀級香氣，但本釀造的俐落尾韻與輕盈口感仍是爽酒特徵 → 爽酒象限上緣，接近薰酒邊界",
+      "aromaTags": [
+        "🍎 蘋果",
+        "🌸 華麗吟釀香",
+        "💎 俐落尾韻",
+        "🌾 山田錦"
+      ],
+      "aromaDesc": "非常舒服的華麗香味，讓人想到蘋果，香氣澄澈度令人驚艷。",
+      "tasteDesc": "溫和口感中閃過出眾甜味，後味俐落消失。100% 兵庫山田錦釀造，cp 值超高，特別本釀造卻具備吟釀級香氣，是『花大錢喝十四代前該先試的酒』。",
+      "breweryStorySlides": [
+        {
+          "title": "明治維新前夜誕生的夜明け前",
+          "desc": "小野酒造店創立於 1864 年，正是日本從幕末走向明治的前夜。銘柄「夜明け前」呼應島崎藤村同名小說，也把時代轉折前的精神放進酒名。",
+          "img": "酒造故事照片/小野-1.jpg",
+          "source": "https://yoakemae-ono.com/"
+        },
+        {
+          "title": "以好米、好水、好環境釀華麗感",
+          "desc": "酒造強調小野這片土地擁有釀酒需要的條件：霧訪山流下的清水、長野美山錦與金紋錦，以及兵庫山田錦。辰の吟以山田錦 60% 打磨，呈現蘋果般清澈香氣與乾淨尾韻。",
+          "img": "酒造故事照片/小野-2.jpg",
+          "source": "Wikimedia Commons / File:Paddy fields in Nagano 2.jpg"
+        },
+        {
+          "title": "名字背後的約定與初心",
+          "desc": "據傳小野酒造向島崎藤村後人請求使用「夜明け前」之名時，也承接了必須堅持風味、追求正統精神的約定。辰の吟原為辰年限定，因辰野町與好評而延續成定番。",
+          "img": "酒造故事照片/小野-3.jpg",
+          "source": "https://yoakemae-ono.com/"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "白身魚刺身（鯛魚／比目魚）",
+          "type": "細緻襯托",
+          "reason": "華麗香氣不搶魚鮮，山田錦的甜旨襯托白身魚淡雅。",
+          "img": "餐點搭配照片/04-pair-1.jpg"
+        },
+        {
+          "title": "鹽烤山女魚／川魚塩焼き",
+          "type": "在地性搭配",
+          "reason": "信州山間溪流魚與當地酒造同源，鹽烤焦香與酒款的俐落尾韻互補。",
+          "img": "餐點搭配照片/04-pair-2.jpg"
+        },
+        {
+          "title": "信州蕎麥麵",
+          "img": "餐點搭配照片/04-pair-3.jpg",
+          "reason": "蕎麥的穀物香與清淡醬汁，能把辰の吟細緻的米香與清澈口感襯出來。",
+          "type": "清雅穀香"
+        }
+      ],
+      "discussionPrompt": "餐飲場景提問：今天客人想點夜明前，但又猶豫詢問您說：「這款酒會不會太重、太容易醉？我們才兩個人喝得完嗎？」您該如何回覆？",
+      "sightseeing": [
+        {
+          "title": "辰野ほたる祭り（信州辰野螢火蟲祭）",
+          "desc": "東日本最大規模螢火蟲觀賞地『松尾峡』，每年 6 月舉辦螢火蟲祭，吸引 10 萬人次（為當地人口 5 倍）。",
+          "img": "產區介紹照片/ほたる祭りサムネ.png"
+        },
+        {
+          "title": "ほたる童謡公園",
+          "desc": "為螢火蟲生息打造的水路公園，夏夜可見無數源氏螢光乱舞。",
+          "img": "產區介紹照片/螢火蟲童謠公園.jpg"
+        },
+        {
+          "title": "諏訪湖",
+          "img": "產區介紹照片/諏訪湖.jpg",
+          "desc": "辰野鄰近諏訪文化圈，湖區與山風讓信州酒款多了一層清冷透明的印象。"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "信州蕎麥麵",
+          "desc": "辰野位於信州蕎麥產地，當地手打蕎麥為代表名物。",
+          "img": "產區介紹照片/04-spec-1.jpg"
+        },
+        {
+          "title": "辰野螢火蟲周邊",
+          "desc": "螢火蟲主題的甜點、紀念品為當地特色伴手禮。",
+          "img": "產區介紹照片/04-spec-2.jpg"
+        },
+        {
+          "title": "長野蘋果",
+          "img": "產區介紹照片/04-spec-3.jpg",
+          "desc": "長野是日本代表性的蘋果產地之一，清甜果香與辰の吟帶出的蘋果般吟釀香相互呼應。"
+        }
+      ],
+      "_verified": {
+        "ssi": true,
+        "brewery": true,
+        "region": true,
+        "sources": [
+          "https://yoakemae-ono.com/products/825/",
+          "https://www.sakenomy.jp/sake/TST0000001882/",
+          "https://www.saketime.jp/brands/863/",
+          "酸度 1.1 待人工確認（官網與 Sakenomy 未列）"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "bottleImage": "bottles/03_juicy_cherry.png",
+      "name": "七水 JUICY CHERRY",
+      "fullName": "七水 JUICY CHERRY 生酒 720ml",
+      "type": "純米生酒",
+      "volume": "720ml",
+      "region": "櫪木縣 宇都宮市",
+      "brewery": "虎屋本店",
+      "rice": "夢ささら",
+      "polish": "60%",
+      "abv": "16%",
+      "smv": -6,
+      "smvLabel": "-6",
+      "acidity": 2,
+      "acidityLabel": "2.0",
+      "price": 9999,
+      "ssi": {
+        "x": 30,
+        "y": 75
+      },
+      "ssiQuadrant": "薰酒",
+      "ssiReason": "酒度-6 偏甘但酸度 2.0 平衡 + 櫻桃/柑橘強果香 + 16% 但口感輕盈多汁 → 標準 SSI 薰酒（香高味輕）",
+      "aromaTags": [
+        "🍒 櫻桃",
+        "🍊 柑橘",
+        "🍯 酸甜旨味",
+        "💧 多汁"
+      ],
+      "aromaDesc": "清爽的柑橘系香氣為主軸，融合櫻桃般的果實感，是 SAKEMARU 與虎屋本店合作的 JUICY 系列限定酒款。",
+      "tasteDesc": "溫柔的酸甜感中融入飽滿的旨味，整體口感輕盈易飲。具備如新鮮水果般多汁的入喉感，以舒適俐落的後勁為特徵。日本酒度 -6 偏甘但酸度 2.0 平衡，毫不甜膩。",
+      "breweryStorySlides": [
+        {
+          "title": "宇都宮七大名井孕育的七水",
+          "desc": "虎屋本店創立於 1788 年，位於宇都宮市中心。當地以七大名井聞名，酒造使用其中「彩虹之井」的伏流水釀酒，因此代表銘柄命名為「七水」。",
+          "img": "酒造故事照片/虎屋-1.jpg",
+          "source": "https://toratora.co.jp/"
+        },
+        {
+          "title": "小藏也能年年挑戰",
+          "desc": "虎屋本店雖是規模不大的酒藏，卻以「心躍る酒を」為概念，持續用 Challenge & Change 的精神探索酒米與風味。七水不是只守傳統，而是每年都想讓喝酒的人感到新鮮。",
+          "img": "酒造故事照片/虎屋-2.jpg",
+          "source": "https://toratora.co.jp/"
+        },
+        {
+          "title": "SAKEMARU 獨家 JUICY CHERRY",
+          "desc": "JUICY 系列與 SAKEMARU 合作，目標是放大清酒「像水果一樣多汁」的可能性。夢ささら帶出柔和旨味，-6 酒度與 2.0 酸度讓櫻桃、柑橘感明亮卻不甜膩。",
+          "img": "酒造故事照片/虎屋-3.jpg",
+          "source": "https://toratora.co.jp/"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "番茄莫札瑞拉沙拉／卡布里",
+          "type": "風味共鳴",
+          "reason": "JUICY 系列的柑橘酸甜與卡布里沙拉的清爽酸味共鳴，跳脫傳統清酒搭配。",
+          "img": "餐點搭配照片/03-pair-1.jpg"
+        },
+        {
+          "title": "鴨胸佐莓果醬",
+          "type": "果香承接",
+          "reason": "鴨胸的油脂與莓果醬的酸甜能承接 JUICY CHERRY 的櫻桃與柑橘感，讓果香變得成熟、有餐酒感。",
+          "img": "餐點搭配照片/03-pair-2.jpg"
+        },
+        {
+          "title": "宇都宮餃子",
+          "img": "餐點搭配照片/03-pair-3.jpg",
+          "reason": "煎餃的香氣、蔬菜甜味與肉汁，能讓 JUICY CHERRY 的果香變得更有活力。",
+          "type": "果香爽口"
+        }
+      ],
+      "discussionPrompt": "餐飲場景提問：這款風味偏『果汁感』，挑戰傳統清酒愛好者的認知。您會用什麼角度向 50 歲以上的常客介紹這支酒？",
+      "sightseeing": [
+        {
+          "title": "宇都宮餃子通",
+          "desc": "日本『餃子之都』，主要街道集結眾多名店與餃子像。",
+          "img": "產區介紹照片/03-sight-1.jpg"
+        },
+        {
+          "title": "大谷資料館",
+          "desc": "巨大地下大谷石採石場遺址，宛如奇幻電影場景。",
+          "img": "產區介紹照片/03-sight-2.jpg"
+        },
+        {
+          "title": "宇都宮二荒山神社 餃子おみくじ",
+          "img": "產區介紹照片/03-sight-3.jpg",
+          "desc": "位於宇都宮市中心的代表神社，境內有以筷子抽取的餃子造型籤，讓餃子之都的地方感更鮮明。"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "宇都宮餃子",
+          "desc": "日本三大餃子之都之首，家庭消費量全國第一。",
+          "img": "產區介紹照片/03-spec-1.jpg"
+        },
+        {
+          "title": "大谷石",
+          "desc": "宇都宮特產石材，多用於建築與石雕（餃子像即用此石）。",
+          "img": "產區介紹照片/03-spec-2.jpg"
+        },
+        {
+          "title": "栃木草莓",
+          "img": "產區介紹照片/03-spec-3.jpg",
+          "desc": "栃木有「草莓王國」之稱，明亮酸甜與 JUICY CHERRY 的紅果感、清爽酸度非常貼合。"
+        }
+      ],
+      "_verified": {
+        "ssi": true,
+        "brewery": true,
+        "region": true,
+        "sources": [
+          "https://toratora.co.jp/",
+          "https://www.saketime.jp/brands/421/",
+          "https://isobe-sake.com/products/shichisu_yume-sasara"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "bottleImage": "bottles/07_yamana_k.png",
+      "name": "山名酒造 K 超辛口",
+      "fullName": "山名酒造 K 超辛口 生酛仕込．藏付酵母 720ml",
+      "type": "純米 生酛 超辛口",
+      "volume": "720ml",
+      "region": "兵庫縣 丹波市",
+      "brewery": "山名酒造",
+      "rice": "山田錦",
+      "polish": "80%",
+      "abv": "15%",
+      "smv": 17,
+      "smvLabel": "+17",
+      "acidity": null,
+      "acidityLabel": "未公開",
+      "price": 9999,
+      "ssi": {
+        "x": 80,
+        "y": 40
+      },
+      "ssiQuadrant": "醇酒",
+      "ssiReason": "生酛仕込＋藏付酵母＋80%精米＋1年熟成→ 香氣低調沉穩、味道濃厚層次深邃 → 標準 SSI 醇酒（香低味濃）。+17 超辛口屬醇酒中的辛口型",
+      "aromaTags": [
+        "🪨 礦石辛口",
+        "🌾 生酛深度",
+        "🍂 熟成圓潤",
+        "💎 緊實尾韻"
+      ],
+      "aromaDesc": "生酛仕込與藏付酵母帶來深邃的酸度與層次感，無浮華吟釀香，是內斂沉穩的辛口風格。",
+      "tasteDesc": "日本酒度達 +17 的超辛口，經 1 年熟成後出貨。原本銳利的辛口口感變得更加圓潤具深度，俐落緊實，最適合盛夏冰鎮飲用。代表性酒造『奧丹波』系列。",
+      "breweryStorySlides": [
+        {
+          "title": "丹波最古級酒藏，享保元年的起點",
+          "desc": "山名酒造創業於 1716 年，位於兵庫丹波市市島町。家族故事可追溯到山名宗全的血脈，後來落腳上田，在有機酒米與山間伏流水環境中釀成「奥丹波」。",
+          "img": "酒造故事照片/山名-1.jpg",
+          "source": "https://www.tambacity-kankou.jp/shop/magokoro_61/"
+        },
+        {
+          "title": "丹波杜氏與藏付き酵母的深度",
+          "desc": "酒造以丹波杜氏手工釀造，重視在地米、水與藏內微生物環境。K 超辛口使用生酛與藏付酵母，讓酒的酸度、旨味與複雜感不靠華麗香氣，而靠時間與發酵層次堆起來。",
+          "img": "酒造故事照片/山名-2.jpg",
+          "source": "https://www.tambacity-kankou.jp/shop/magokoro_61/"
+        },
+        {
+          "title": "+17 超辛口，熟成後更圓的稜線",
+          "desc": "日本酒度 +17 的銳利辛口，經酒造內 1 年熟成後才出貨，使原本直線感強的辛口變得更圓潤深邃。冰鎮後俐落緊實，適合盛夏，也很適合和甜醬油、黑豆煮物等丹波風味對話。",
+          "img": "酒造故事照片/山名-3.jpg",
+          "source": "https://www.tambacity-kankou.jp/shop/magokoro_61/"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "炭烤紅肉／燒鳥",
+          "type": "風味平衡",
+          "reason": "+17 超辛口能切開烤肉油脂，生酛深度酸感與焦香共鳴，圓潤熟成感讓辛口不刺激。",
+          "img": "餐點搭配照片/07-pair-1.jpg"
+        },
+        {
+          "title": "丹波黑豆煮物／重口味煮物",
+          "type": "在地性搭配",
+          "reason": "丹波黑豆為當地名物，與酒造同源；超辛口酒體可平衡煮物的甜醬油風味。",
+          "img": "餐點搭配照片/07-pair-2.jpg"
+        },
+        {
+          "title": "丹波栗甜點／季節甘味",
+          "img": "餐點搭配照片/丹波栗.jpeg",
+          "reason": "丹波栗與季節甘味的濃厚香氣能柔化超辛口骨架，讓收尾乾淨但不單薄。",
+          "type": "甘香收斂"
+        }
+      ],
+      "discussionPrompt": "餐飲場景提問：日本酒度 +17 屬於極端辛口，能挑戰許多客人的味蕾極限。您會用什麼料理組合『包裝』這款酒，讓客人覺得辛口很值得？",
+      "sightseeing": [
+        {
+          "title": "丹波篠山城跡",
+          "desc": "築城名手藤堂高虎主持，江戶初期重要城下町，現為觀光重點。",
+          "img": "產區介紹照片/07-sight-1.jpg"
+        },
+        {
+          "title": "丹波焼の里（立杭陶之里）",
+          "desc": "日本六古窯之一，800 年陶藝傳統，眾多窯元工房可參觀。",
+          "img": "產區介紹照片/07-sight-2.jpg"
+        },
+        {
+          "title": "柏原藩陣屋跡",
+          "img": "產區介紹照片/柏原藩陣屋跡.jpg",
+          "desc": "丹波柏原保留城下町與歷史街區氣質，讓山名酒造的產地故事更有時間感。"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "丹波黑豆",
+          "desc": "日本最大粒黑大豆，10 月限定的『黑枝豆』為『幻之枝豆』。2020 年獲日本農業遺產認定。",
+          "img": "產區介紹照片/07-spec-1.jpg"
+        },
+        {
+          "title": "丹波栗／松茸",
+          "desc": "丹波栗與丹波松茸為秋季高級食材，與黑豆並列丹波三寶。",
+          "img": "產區介紹照片/07-spec-2.jpg"
+        },
+        {
+          "title": "丹波大納言小豆",
+          "img": "產區介紹照片/丹波大納言小豆.jpg",
+          "desc": "丹波大納言小豆與黑豆同屬地方代表食材，溫潤豆香能補足產區餐桌想像。"
+        }
+      ],
+      "_verified": {
+        "ssi": true,
+        "brewery": true,
+        "region": true,
+        "sources": [
+          "https://okutamba.co.jp/",
+          "https://okutamba.co.jp/html/products/",
+          "https://www.saketime.jp/brands/1571/",
+          "https://www.nikkei.com/article/DGXZQOUF2297I0S5A120C2000000/",
+          "『K 超辛口 +17 / 80%精米 / 1年熟成』特定 SKU 待人工確認 — 山名酒造官網與 SAKETIME 未列同名商品；生酛＋蔵付酵母＋超辛口系列存在"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "bottleImage": "bottles/05_shirakiku.png",
+      "name": "Shirakiku DAY DREAM",
+      "fullName": "白木久 Shirakiku DAY DREAM 無濾過生原酒 720ml",
+      "type": "無濾過生原酒（薄濁）",
+      "volume": "720ml",
+      "region": "京都府 京丹後市",
+      "brewery": "白杉酒造",
+      "rice": "丹後產 夢ごこち（食用米）",
+      "polish": "60%",
+      "abv": "14.5%",
+      "smv": -25,
+      "smvLabel": "-25",
+      "acidity": 2.8,
+      "acidityLabel": "2.8",
+      "price": 9999,
+      "ssi": {
+        "x": 35,
+        "y": 70
+      },
+      "ssiQuadrant": "薰酒",
+      "ssiReason": "青蘋果＋柑橘皮＋白色花香 = 高香氣；雖 SMV -25 極甘，但高酸度 2.8 強力平衡，14.5% ABV 與細緻氣泡讓口感不沉重 → 仍屬 SSI 薰酒（香高味輕）象限，是甘酸薰酒的代表型",
+      "aromaTags": [
+        "🍏 青蘋果",
+        "🍋 柑橘皮",
+        "🌸 白色花香",
+        "🫧 細緻氣泡",
+        "🥛 乳香"
+      ],
+      "aromaDesc": "青蘋果與柑橘的清爽氣息，隱約混雜乳香。如春日白日夢般輕盈甜酸。",
+      "tasteDesc": "細緻氣泡感與輕盈酸甜讓人心頭一緊。日本酒度 -25 的甘味由酸度 2.8 完美平衡，覆盆子或荔枝般的透明感酸味包裹蜜糖甜味，舌尖滾動時柑橘皮般清爽蔓延。薄濁帶來乾淨俐落收尾，餘韻雖甘但不膩。",
+      "breweryStorySlides": [
+        {
+          "title": "京丹後唯一無二的食用米酒藏",
+          "desc": "白杉酒造創立於 1777 年，位於京都府京丹後市。它最鮮明的特色，是不使用山田錦等酒造好適米，而是堅持用丹後在地「吃起來好吃的米」來釀清酒。",
+          "img": "酒造故事照片/白杉-1.jpg",
+          "source": "https://japansake.or.jp/sakagura/jp/kyoto/shirasugi-shuzou/"
+        },
+        {
+          "title": "美味的米飯，變成美味的清酒",
+          "desc": "酒造座右銘是「美味的米飯產生美味的清酒」。DAY DREAM 使用丹後產夢ごこち，呼應酒名白日夢的輕盈感，也讓甜酸、薄濁與細緻氣泡像春日午後一樣柔和。",
+          "img": "酒造故事照片/白杉-2.jpg",
+          "source": "https://japansake.or.jp/sakagura/jp/kyoto/shirasugi-shuzou/"
+        },
+        {
+          "title": "白麴、黑麴與自由命名的美感",
+          "desc": "白杉酒造常以白麴、黑麴和新製法挑戰「誰也沒做過」的味道。DAY DREAM 不只是可愛命名，夢ごこち米、青蘋果柑橘香與乾淨辛口收尾，讓整款酒像可飲用的春天。",
+          "img": "酒造故事照片/白杉-3.jpg",
+          "source": "https://japansake.or.jp/sakagura/jp/kyoto/shirasugi-shuzou/"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "春季蔬菜天婦羅",
+          "type": "季節呼應",
+          "reason": "DAY DREAM 為春季限定薄濁，與時令春蔬天婦羅的青嫩感互為呼應，氣泡感解油。",
+          "img": "餐點搭配照片/05-pair-1.jpg"
+        },
+        {
+          "title": "柑橘醃製白身魚",
+          "type": "風味共鳴",
+          "reason": "酒中青蘋果＋柑橘皮香氣與柑橘醃漬料理直接共鳴，乳香增添層次。",
+          "img": "餐點搭配照片/柑橘醃製白身魚.jpeg"
+        },
+        {
+          "title": "丹後ばらずし",
+          "img": "餐點搭配照片/05-pair-3.jpg",
+          "reason": "丹後ばらずし的醋飯、魚香與甜鹹配料，能承接 DAY DREAM 輕盈的酸甜調性。",
+          "type": "酸甜鮮香"
+        }
+      ],
+      "discussionPrompt": "餐飲場景提問：您會如何在套餐流程中安排這款酒，發揮『Shirakiku DAY DREAM』的特性來和套餐做搭配？",
+      "sightseeing": [
+        {
+          "title": "天橋立",
+          "desc": "日本三景之一，宛如飛龍在天的沙洲絕景，距京丹後車程約 1 小時。",
+          "img": "產區介紹照片/05-sight-1.jpg"
+        },
+        {
+          "title": "袖志の棚田",
+          "desc": "日本棚田百選之一，海岸線旁的層層梯田絕景。",
+          "img": "產區介紹照片/05-sight-2.jpg"
+        },
+        {
+          "title": "琴引浜",
+          "img": "產區介紹照片/琴引浜.webp",
+          "desc": "京丹後的海岸風景讓產區介紹更完整，也呼應酒款清亮、帶海風感的印象。"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "間人ガニ（間人蟹）",
+          "desc": "間人漁港稀少水揚的『幻之蟹』，松葉蟹中最高等級。",
+          "img": "產區介紹照片/間人ガニ（間人蟹）.jpg"
+        },
+        {
+          "title": "丹後ばらずし",
+          "desc": "京丹後獨有的鄉土料理，鯖魚鬆與多種配料拌入壽司飯，全國僅此處有。",
+          "img": "產區介紹照片/05-spec-2.jpg"
+        },
+        {
+          "title": "丹後米",
+          "img": "產區介紹照片/丹後越光米.jpg",
+          "desc": "丹後米讓京丹後的海味之外多了稻作風景，也呼應白杉酒造以米香延伸出的清亮口感。"
+        }
+      ],
+      "_verified": {
+        "ssi": true,
+        "brewery": true,
+        "region": true,
+        "sources": [
+          "https://sake-shirakiku.jp/",
+          "https://www.jizake.com/c/sake/shirasugi/ns380027c00",
+          "https://ja.wikipedia.org/wiki/%E7%99%BD%E6%9D%89%E9%85%92%E9%80%A0"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "bottleImage": "bottles/02_hizirizm.png",
+      "name": "Hizirizm 渡舟70 GOTH",
+      "fullName": "聖 Hizirizm 渡舟70 GOTH 生酛 720ml",
+      "type": "生酛純米",
+      "volume": "720ml",
+      "region": "群馬縣 渋川市",
+      "brewery": "聖酒造",
+      "rice": "滋賀渡船六號",
+      "polish": "70%",
+      "abv": "15.7%",
+      "smv": 1,
+      "smvLabel": "+1",
+      "acidity": 1.8,
+      "acidityLabel": "1.8",
+      "price": 9999,
+      "ssi": {
+        "x": 60,
+        "y": 60
+      },
+      "ssiQuadrant": "薰酒／醇酒邊界",
+      "ssiReason": "原誤判為熟酒（熟酒=古酒/長期熟成），但本酒為生酒。修正：荔枝石榴強果香 + 生酛圓潤旨味 → 薰酒（高香氣）偏醇酒（味中濃）邊界",
+      "aromaTags": [
+        "🍇 石榴果實",
+        "🌰 栗子熟成",
+        "🍈 荔枝果香",
+        "🌾 渡舟圓潤"
+      ],
+      "aromaDesc": "荔枝般輕盈香氣開場，石榴般濃郁果實感蔓延，尾韻帶有微微的栗子熟成香。",
+      "tasteDesc": "雄町米系『渡舟』特有的柔和圓潤口感與酸味完美融合，呈現優雅而精緻的美酒風格，是當期酒造的最高水準。",
+      "breweryStorySlides": [
+        {
+          "title": "赤城山西南麓，八代傳承的聖",
+          "desc": "聖酒造創立於 1841 年，位於群馬渋川、赤城山西南麓。酒名「聖」取自古語中澄澈潔淨之酒的意象，八代 180 年以來承接家族技術，在冬季清冷空氣與自然水系中持續釀造。",
+          "img": "酒造故事照片/聖-1.jpg",
+          "source": "https://www.hijiri-sake.co.jp/pages/about"
+        },
+        {
+          "title": "螢火蟲與伏流水的釀酒環境",
+          "desc": "酒造周邊有利根川與赤城山自然水系，官方故事也提到螢火蟲飛舞、綠意豐富的環境。這種清冽感對應到 Hizirizm 的透明酸度，也讓生酛的旨味不顯沉重。",
+          "img": "酒造故事照片/聖-2.jpg",
+          "source": "https://www.hijiri-sake.co.jp/pages/about"
+        },
+        {
+          "title": "渡舟米帶來的優雅輪廓",
+          "desc": "這款使用滋賀渡船六號，也就是山田錦的母系品種之一。渡舟米使酒體帶有柔和圓潤的米旨與平衡酸度，荔枝、石榴般果香之後，留下微微栗子熟成感，是聖酒造展現進化感的作品。",
+          "img": "酒造故事照片/聖-3.jpg",
+          "source": "https://www.hijiri-sake.co.jp/pages/about"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "醬燒鰻魚／照燒雞腿",
+          "type": "風味平衡",
+          "reason": "渡舟米的柔和圓潤口感能溫和包覆濃郁醬汁，熟成感與焦香共鳴。",
+          "img": "餐點搭配照片/02-pair-1.jpg"
+        },
+        {
+          "title": "鴨肉燻製／鵝肝醬",
+          "type": "質地搭配",
+          "reason": "石榴與栗子熟成香能襯托肉類油脂與煙燻層次，生酛酸度切油。",
+          "img": "餐點搭配照片/02-pair-2.jpg"
+        },
+        {
+          "title": "上州牛排／炙燒紅肉",
+          "img": "餐點搭配照片/上州牛排.jpg",
+          "reason": "熟成香、米旨味與紅肉油脂能互相拉長尾韻，讓 GOTH 的厚度更明顯。",
+          "type": "熟香厚旨"
+        }
+      ],
+      "discussionPrompt": "餐飲場景提問：這款酒的精米步合較高有到70%，您要如何推薦客人並且打破客人對於精米步合越低越好喝的刻板印象？",
+      "sightseeing": [
+        {
+          "title": "伊香保溫泉",
+          "desc": "群馬名湯，石階街與黃金之湯、白銀之湯雙泉聞名。距渋川聖酒造約 20 分鐘車程。",
+          "img": "產區介紹照片/02-sight-1.jpg"
+        },
+        {
+          "title": "赤城山",
+          "desc": "日本百名山之一，山頂的大沼湖在冬季可滑冰、釣公魚。",
+          "img": "產區介紹照片/赤城山.jpg"
+        },
+        {
+          "title": "榛名湖",
+          "img": "產區介紹照片/榛名湖.jpg",
+          "desc": "群馬山地湖泊與溫泉文化相連，帶出聖酒造所在地周邊清冷、沉靜的風土感。"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "渋川蒟蒻",
+          "desc": "渋川市為日本蒟蒻產量首位之一，蒟蒻製品為當地代表名物。",
+          "img": "產區介紹照片/02-spec-1.jpg"
+        },
+        {
+          "title": "群馬創作こけし",
+          "desc": "群馬縣佔全國 7 成市佔的創作木偶，渋川為主要產地。",
+          "img": "產區介紹照片/02-spec-2.jpg"
+        },
+        {
+          "title": "水澤うどん",
+          "img": "產區介紹照片/02-spec-3.jpg",
+          "desc": "群馬代表麵食之一，滑順麵體與醬汁旨味適合搭配有輪廓的米香系清酒。"
+        }
+      ],
+      "_verified": {
+        "ssi": true,
+        "brewery": true,
+        "region": true,
+        "sources": [
+          "https://www.sakaya-kurihara.jp/item/2015ho-1797/",
+          "https://www.syusendo-horiichi.co.jp/SHOP/858.html",
+          "https://www.saketime.jp/brands/2357/"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "bottleImage": "bottles/06_yofukashi.png",
+      "name": "夜ふかし 和風薩摩芋",
+      "fullName": "夜ふかし スイートポテト 利口酒 500ml",
+      "type": "利口酒（地瓜）",
+      "volume": "500ml",
+      "region": "埼玉県 毛呂山町",
+      "brewery": "麻原酒造",
+      "rice": "地瓜（薩摩芋）",
+      "polish": "—",
+      "abv": "8%",
+      "smv": null,
+      "smvLabel": "未公開",
+      "acidity": null,
+      "acidityLabel": "未公開",
+      "price": 9999,
+      "ssi": {
+        "x": 75,
+        "y": 80
+      },
+      "ssiQuadrant": "⚠️ N/A（利口酒，SSI 4 タイプ不適用）",
+      "ssiReason": "SSI 4 タイプ分類專為清酒（日本酒）設計。本款為地瓜（薩摩芋）利口酒，僅借用座標標示位置：8% 低酒精但濃厚甜美 → 若強行對應，落在『高香氣＋濃郁』象限（熟酒位置），但不應視為熟酒",
+      "aromaTags": [
+        "🍠 地瓜甜",
+        "🍯 蜜濃郁",
+        "🥛 奶味滑順",
+        "🌙 夜晚甜點"
+      ],
+      "aromaDesc": "以『可飲用的地瓜甜點』為概念，散發溫柔甜美的地瓜香與蜜糖般濃郁。",
+      "tasteDesc": "風味醇厚、帶有甜品般的滿足感。建議飲用前輕輕上下搖勻使口感均勻順滑。可直接飲用，也推薦加入牛奶調飲，展現如奶酒甜點般的柔和層次。",
+      "breweryStorySlides": [
+        {
+          "title": "毛呂山町的家族酒造",
+          "desc": "麻原酒造創立於 1882 年，位於埼玉縣毛呂山町，秩父山脈旁的丘陵環境適合蔬菜、水稻與水果生長。從第一代麻原善次郎開始，家族酒造傳承至第五代。",
+          "img": "酒造故事照片/麻原-1.jpg",
+          "source": "https://japansake.or.jp/sakagura/jp/saitama/asahara-shuzou/"
+        },
+        {
+          "title": "從清酒走向利口酒、啤酒與葡萄酒",
+          "desc": "麻原酒造不只釀清酒，也因客戶喜好推出果實酒、梅酒、柚子酒、啤酒與葡萄酒等多樣產品。這種「不拒絕有趣請求」的精神，讓它成為創意型酒造的代表之一。",
+          "img": "酒造故事照片/麻原-2.jpg",
+          "source": "https://japansake.or.jp/sakagura/jp/saitama/asahara-shuzou/"
+        },
+        {
+          "title": "夜ふかし：把地瓜甜點倒進杯裡",
+          "desc": "夜ふかし 和風薩摩芋以「可飲用的地瓜甜點」為概念。濃郁滑順、溫柔甜味明顯，喝前輕搖可讓質地更均勻；加入牛奶時，會變成像地瓜奶酒般的微奢甜點杯。",
+          "img": "酒造故事照片/麻原-3.jpg",
+          "source": "https://japansake.or.jp/sakagura/jp/saitama/asahara-shuzou/"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "起司蛋糕／提拉米蘇",
+          "type": "甜點配對",
+          "reason": "本身即為『可飲用甜點』，與奶味甜點直接呼應，是套餐尾聲的完美收尾酒。",
+          "img": "餐點搭配照片/06-pair-1.jpg"
+        },
+        {
+          "title": "加牛奶調飲（廠商推薦）",
+          "type": "酒造官方建議",
+          "reason": "酒造官方推薦的飲用方式，可化身為地瓜奶酒，質地更柔順滑潤。",
+          "img": "餐點搭配照片/06-pair-2.jpg"
+        },
+        {
+          "title": "柚子香甜點／冰品",
+          "img": "餐點搭配照片/柚子香甜點.jpg",
+          "reason": "柚子系甜點的酸香能平衡薩摩芋般的甜潤，讓收尾更輕快。",
+          "type": "甜香清爽"
+        }
+      ],
+      "discussionPrompt": "餐飲場景提問：8% 低酒精的『地瓜利口酒』，您會在懷石／套餐中的哪個時間點端出？是收尾的甜點酒、還是中段的趣味驚喜？",
+      "sightseeing": [
+        {
+          "title": "黑山三瀑（黒山三滝）",
+          "desc": "日本百選瀑布之一，位於越生町與毛呂山町交界，古來為山岳佛教修行地。",
+          "img": "產區介紹照片/06-sight-1.jpg"
+        },
+        {
+          "title": "越生梅林",
+          "desc": "關東三大梅林，2 月底至 3 月初梅花盛開時景色絕美。",
+          "img": "產區介紹照片/06-sight-2.jpg"
+        },
+        {
+          "title": "鎌北湖",
+          "img": "產區介紹照片/鎌北湖.jpeg",
+          "desc": "毛呂山周邊的湖景與丘陵，補足酒款產地的自然感，也讓甜香不只停在甜點印象。"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "越生柚子（ゆず）",
+          "desc": "越生町為關東代表柚子產地，柚子加工品（柚子酒／柚子點心）為當地名物。",
+          "img": "產區介紹照片/越生柚子（ゆず）.jpg"
+        },
+        {
+          "title": "狭山茶",
+          "img": "產區介紹照片/06-spec-3.jpg",
+          "desc": "狭山茶帶來埼玉飲食文化的清苦回甘，和甜香型酒款形成舒服對比。"
+        },
+        {
+          "title": "狭山茶甜點文化",
+          "desc": "狭山茶的清苦回甘能和甜香型酒款形成對比，也讓埼玉產區多一層茶香記憶。",
+          "img": "產區介紹照片/狭山茶甜點文化.jpg"
+        }
+      ],
+      "_verified": {
+        "ssi": true,
+        "brewery": true,
+        "region": true,
+        "sources": [
+          "https://www.musashino-asahara.jp/company.html",
+          "https://ja.wikipedia.org/wiki/%E9%BA%BB%E5%8E%9F%E9%85%92%E9%80%A0",
+          "https://saisake.com/kuramoto/%E9%BA%BB%E5%8E%9F%E9%85%92%E9%80%A0/",
+          "『夜ふかし 和風薩摩芋』特定 SKU 待人工確認 — 酒造官網與主要通路未列同名商品頁"
+        ]
+      }
+    }
+  ]
+}

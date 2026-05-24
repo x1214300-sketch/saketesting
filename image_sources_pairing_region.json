@@ -1,0 +1,383 @@
+{
+  "sources": [
+    {
+      "file": "餐點搭配照片/01-pair-1.jpg",
+      "query": "seafood donburi",
+      "source": "File:Seafood Donburi at Tsukiji fish market.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Seafood_Donburi_at_Tsukiji_fish_market.jpg/1920px-Seafood_Donburi_at_Tsukiji_fish_market.jpg"
+    },
+    {
+      "file": "餐點搭配照片/01-pair-2.jpg",
+      "query": "grilled ayu",
+      "source": "File:Grilled fish (Ayu) (7152661641).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Grilled_fish_%28Ayu%29_%287152661641%29.jpg/1920px-Grilled_fish_%28Ayu%29_%287152661641%29.jpg"
+    },
+    {
+      "file": "產區介紹照片/01-sight-1.jpg",
+      "query": "Maizuru Red Brick Park",
+      "source": "File:Maizuru red brick warehouses08s3200.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Maizuru_red_brick_warehouses08s3200.jpg/1920px-Maizuru_red_brick_warehouses08s3200.jpg"
+    },
+    {
+      "file": "產區介紹照片/01-spec-1.jpg",
+      "query": "Japanese snow crab",
+      "source": "File:Boiled Echizen crab (snow crab) male and female.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Boiled_Echizen_crab_%28snow_crab%29_male_and_female.jpg/1920px-Boiled_Echizen_crab_%28snow_crab%29_male_and_female.jpg"
+    },
+    {
+      "file": "產區介紹照片/01-spec-2.jpg",
+      "query": "Manganji pepper",
+      "source": "File:Manganji green pepper by yomi955.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Manganji_green_pepper_by_yomi955.jpg"
+    },
+    {
+      "file": "餐點搭配照片/02-pair-1.jpg",
+      "query": "teriyaki chicken",
+      "source": "File:Chicken teriyaki, Fried chicken, Krasnoyarsk, Russia.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Chicken_teriyaki%2C_Fried_chicken%2C_Krasnoyarsk%2C_Russia.jpg/1920px-Chicken_teriyaki%2C_Fried_chicken%2C_Krasnoyarsk%2C_Russia.jpg"
+    },
+    {
+      "file": "餐點搭配照片/02-pair-2.jpg",
+      "query": "smoked duck breast",
+      "source": "File:Duck breast, smoked and panfried.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Duck_breast%2C_smoked_and_panfried.jpg"
+    },
+    {
+      "file": "產區介紹照片/02-spec-1.jpg",
+      "query": "konnyaku food",
+      "source": "File:Konnyaku.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Konnyaku.jpg"
+    },
+    {
+      "file": "餐點搭配照片/03-pair-1.jpg",
+      "query": "caprese salad",
+      "source": "File:Insalata Caprese (from Poznan).JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Insalata_Caprese_%28from_Poznan%29.JPG/1920px-Insalata_Caprese_%28from_Poznan%29.JPG"
+    },
+    {
+      "file": "餐點搭配照片/03-pair-2.jpg",
+      "query": "roast duck breast cherry sauce",
+      "source": "File:Roast Duck Breast & Leg with cherry sauce, roast parsnips, potatoes, sprouts and gravy. (45566092424).jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Roast%20Duck%20Breast%20%26%20Leg%20with%20cherry%20sauce%2C%20roast%20parsnips%2C%20potatoes%2C%20sprouts%20and%20gravy.%20%2845566092424%29.jpg"
+    },
+    {
+      "file": "產區介紹照片/03-sight-1.jpg",
+      "query": "Utsunomiya gyoza",
+      "source": "File:Utsunomiya Gyoza Burger.jpeg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Utsunomiya_Gyoza_Burger.jpeg/1920px-Utsunomiya_Gyoza_Burger.jpeg"
+    },
+    {
+      "file": "產區介紹照片/03-sight-2.jpg",
+      "query": "Oya History Museum",
+      "source": "File:Oya History Museum entrance 2016-05-12.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Oya_History_Museum_entrance_2016-05-12.jpg/1920px-Oya_History_Museum_entrance_2016-05-12.jpg"
+    },
+    {
+      "file": "餐點搭配照片/04-pair-1.jpg",
+      "query": "tai sashimi",
+      "source": "File:Red sea bream sashimi (27992669723).jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Red%20sea%20bream%20sashimi%20%2827992669723%29.jpg"
+    },
+    {
+      "file": "產區介紹照片/04-sight-1.jpg",
+      "query": "firefly festival Japan",
+      "source": "File:2017 Echigo Kawaguchi Snow Hut and Firefly Festival Fireworks 02.png",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/2017_Echigo_Kawaguchi_Snow_Hut_and_Firefly_Festival_Fireworks_02.png"
+    },
+    {
+      "file": "產區介紹照片/04-sight-2.jpg",
+      "query": "firefly park Japan",
+      "source": "File:岩手公園蛍の里 Firefly Biosphere in Iwate Park - panoramio.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/%E5%B2%A9%E6%89%8B%E5%85%AC%E5%9C%92%E8%9B%8D%E3%81%AE%E9%87%8C_Firefly_Biosphere_in_Iwate_Park_-_panoramio.jpg/1920px-%E5%B2%A9%E6%89%8B%E5%85%AC%E5%9C%92%E8%9B%8D%E3%81%AE%E9%87%8C_Firefly_Biosphere_in_Iwate_Park_-_panoramio.jpg"
+    },
+    {
+      "file": "產區介紹照片/04-spec-1.jpg",
+      "query": "Shinshu soba",
+      "source": "File:160429 Shinshu soba Nagano Japan01s8.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/160429_Shinshu_soba_Nagano_Japan01s8.jpg/1920px-160429_Shinshu_soba_Nagano_Japan01s8.jpg"
+    },
+    {
+      "file": "產區介紹照片/04-spec-2.jpg",
+      "query": "firefly Japan",
+      "source": "File:Toyota Hotaru no sato museum.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Toyota_Hotaru_no_sato_museum.JPG/1920px-Toyota_Hotaru_no_sato_museum.JPG"
+    },
+    {
+      "file": "餐點搭配照片/05-pair-1.jpg",
+      "query": "vegetable tempura",
+      "source": "File:Vegetable Tempura - Siam Siam 2024-07-31.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Vegetable_Tempura_-_Siam_Siam_2024-07-31.jpg/1920px-Vegetable_Tempura_-_Siam_Siam_2024-07-31.jpg"
+    },
+    {
+      "file": "餐點搭配照片/05-pair-2.jpg",
+      "query": "fish carpaccio citrus",
+      "source": "File:Novotel Saclay 2013 plat 1.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Novotel_Saclay_2013_plat_1.jpg/1920px-Novotel_Saclay_2013_plat_1.jpg"
+    },
+    {
+      "file": "產區介紹照片/05-sight-1.jpg",
+      "query": "Amanohashidate",
+      "source": "File:Amanohashidate view from Kasamatsu Park01s3s4410.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Amanohashidate_view_from_Kasamatsu_Park01s3s4410.jpg/1920px-Amanohashidate_view_from_Kasamatsu_Park01s3s4410.jpg"
+    },
+    {
+      "file": "餐點搭配照片/06-pair-2.jpg",
+      "query": "milk cocktail",
+      "source": "File:Cocktail with milk rice espuma in 3Freunde Bar.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Cocktail_with_milk_rice_espuma_in_3Freunde_Bar.jpg/1920px-Cocktail_with_milk_rice_espuma_in_3Freunde_Bar.jpg"
+    },
+    {
+      "file": "產區介紹照片/06-sight-1.jpg",
+      "query": "Kuroyama Santaki waterfall",
+      "source": "File:Kuroyama Santaki.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Kuroyama_Santaki.jpg"
+    },
+    {
+      "file": "產區介紹照片/01-sight-2.jpg",
+      "query": "Goro Sky Tower",
+      "source": "File:Goro Sky tower.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Goro_Sky_tower.jpg/1920px-Goro_Sky_tower.jpg"
+    },
+    {
+      "file": "產區介紹照片/02-sight-1.jpg",
+      "query": "Ikaho Onsen Stone Steps",
+      "source": "File:Ikaho Onsen steps 3.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Ikaho_Onsen_steps_3.jpg"
+    },
+    {
+      "file": "產區介紹照片/02-sight-2.jpg",
+      "query": "Mount Akagi Onuma",
+      "source": "File:Akagi Shrine @ Lake Onuma @ Trail from Mount Kurobi to Lake Onuma @ Mount Akagi area (14181943776).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Akagi_Shrine_%40_Lake_Onuma_%40_Trail_from_Mount_Kurobi_to_Lake_Onuma_%40_Mount_Akagi_area_%2814181943776%29.jpg/1920px-Akagi_Shrine_%40_Lake_Onuma_%40_Trail_from_Mount_Kurobi_to_Lake_Onuma_%40_Mount_Akagi_area_%2814181943776%29.jpg"
+    },
+    {
+      "file": "產區介紹照片/02-spec-2.jpg",
+      "query": "kokeshi dolls Japan",
+      "source": "File:Kokeshi 1.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Kokeshi_1.JPG/1920px-Kokeshi_1.JPG"
+    },
+    {
+      "file": "產區介紹照片/03-spec-1.jpg",
+      "query": "Japanese gyoza",
+      "source": "File:Missgyoza production gyoza dumpling Manufacturer.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Missgyoza_production_gyoza_dumpling_Manufacturer.jpg/1920px-Missgyoza_production_gyoza_dumpling_Manufacturer.jpg"
+    },
+    {
+      "file": "餐點搭配照片/04-pair-2.jpg",
+      "query": "grilled ayu",
+      "source": "File:Grilled ayu (28381314160).jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Grilled_ayu_%2828381314160%29.jpg/1920px-Grilled_ayu_%2828381314160%29.jpg"
+    },
+    {
+      "file": "產區介紹照片/05-sight-2.jpg",
+      "query": "rice terrace Japan",
+      "source": "File:Rice Field Terrace, Kitaimogawa, Sanjō, Niigata, Japan, September 2022.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Rice_Field_Terrace%2C_Kitaimogawa%2C_Sanj%C5%8D%2C_Niigata%2C_Japan%2C_September_2022.jpg/1920px-Rice_Field_Terrace%2C_Kitaimogawa%2C_Sanj%C5%8D%2C_Niigata%2C_Japan%2C_September_2022.jpg"
+    },
+    {
+      "file": "產區介紹照片/05-spec-1.jpg",
+      "query": "Japanese snow crab",
+      "source": "File:Echizengani museum.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Echizengani_museum.JPG/1920px-Echizengani_museum.JPG"
+    },
+    {
+      "file": "產區介紹照片/06-sight-2.jpg",
+      "query": "ume grove Japan",
+      "source": "File:広橋梅林 Hirohashi-bairin (Ume grove) 2013.3.17 - panoramio.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/%E5%BA%83%E6%A9%8B%E6%A2%85%E6%9E%97_Hirohashi-bairin_%28Ume_grove%29_2013.3.17_-_panoramio.jpg/1920px-%E5%BA%83%E6%A9%8B%E6%A2%85%E6%9E%97_Hirohashi-bairin_%28Ume_grove%29_2013.3.17_-_panoramio.jpg"
+    },
+    {
+      "file": "產區介紹照片/06-spec-1.jpg",
+      "query": "yuzu fruit",
+      "source": "File:Yuzu orange plant (Citrus species); branch with two fruit. Wellcome V0043738.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Yuzu_orange_plant_%28Citrus_species%29%3B_branch_with_two_fruit._Wellcome_V0043738.jpg/1920px-Yuzu_orange_plant_%28Citrus_species%29%3B_branch_with_two_fruit._Wellcome_V0043738.jpg"
+    },
+    {
+      "file": "產區介紹照片/06-spec-2.jpg",
+      "query": "green tea field Japan",
+      "source": "File:Omaezaki green tea fields.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Omaezaki_green_tea_fields.JPG"
+    },
+    {
+      "file": "餐點搭配照片/06-pair-1.jpg",
+      "query": "direct upload path",
+      "source": "File:Tiramisu cheese cake from the Cheesecake Factory.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Tiramisu_cheese_cake_from_the_Cheesecake_Factory.jpg"
+    },
+    {
+      "file": "產區介紹照片/03-spec-2.jpg",
+      "query": "direct upload path",
+      "source": "File:Oya stone Illumination 2020.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Oya_stone_Illumination_2020.jpg"
+    },
+    {
+      "file": "產區介紹照片/05-spec-2.jpg",
+      "query": "direct upload path",
+      "source": "File:BarazushiC042501.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/81/BarazushiC042501.jpg"
+    },
+    {
+      "file": "餐點搭配照片/07-pair-1.jpg",
+      "query": "direct upload path",
+      "source": "File:Cooking yakitori.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Cooking_yakitori.jpg"
+    },
+    {
+      "file": "餐點搭配照片/07-pair-2.jpg",
+      "query": "official site direct image",
+      "source": "official/MAFF/tourism direct image",
+      "url": "https://www.maff.go.jp/e/policies/market/k_ryouri/assets/uploads/2022/08/kyoto_24_1-1.jpg"
+    },
+    {
+      "file": "產區介紹照片/07-spec-1.jpg",
+      "query": "official site direct image",
+      "source": "official/MAFF/tourism direct image",
+      "url": "https://www.maff.go.jp/e/policies/market/k_ryouri/assets/uploads/2022/08/kyoto_24_1-2.jpg"
+    },
+    {
+      "file": "產區介紹照片/07-sight-1.jpg",
+      "query": "official site direct image",
+      "source": "official/MAFF/tourism direct image",
+      "url": "https://tourism.sasayama.jp/wp-content/uploads/2024/03/DSC01517-300x200.jpg"
+    },
+    {
+      "file": "產區介紹照片/07-sight-2.jpg",
+      "query": "official site direct image",
+      "source": "official/MAFF/tourism direct image",
+      "url": "https://tanbayaki.com/renewal/wp-content/themes/tanbayaki/img/top_img01.jpg"
+    },
+    {
+      "file": "產區介紹照片/07-spec-2.jpg",
+      "query": "official site direct image",
+      "source": "official/MAFF/tourism direct image",
+      "url": "https://matutake.com/system_panel/uploads/images/20210505224726965036.JPG"
+    },
+    {
+      "file": "餐點搭配照片/01-pair-3.jpg",
+      "query": "fritto misto seafood",
+      "source": "File:Fritto misto.JPG",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fritto%20misto.JPG"
+    },
+    {
+      "file": "產區介紹照片/01-sight-3.jpg",
+      "query": "Maizuru Bay Japan",
+      "source": "File:Maizuru bay.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Maizuru_bay.jpg"
+    },
+    {
+      "file": "產區介紹照片/01-spec-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real rice terrace photo",
+      "url": "產區介紹照片/05-sight-2.jpg"
+    },
+    {
+      "file": "餐點搭配照片/02-pair-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real grilled meat photo",
+      "url": "餐點搭配照片/07-pair-1.jpg"
+    },
+    {
+      "file": "產區介紹照片/02-sight-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Gunma mountain photo",
+      "url": "產區介紹照片/02-sight-2.jpg"
+    },
+    {
+      "file": "產區介紹照片/02-spec-3.jpg",
+      "query": "Mizusawa udon",
+      "source": "File:Mizusawa Udon Tamaruya.JPG",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Mizusawa_Udon_Tamaruya.JPG"
+    },
+    {
+      "file": "餐點搭配照片/03-pair-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Utsunomiya gyoza photo",
+      "url": "產區介紹照片/03-spec-1.jpg"
+    },
+    {
+      "file": "產區介紹照片/03-sight-3.jpg",
+      "query": "Utsunomiya Futaarayama gyoza omikuji",
+      "source": "emprecious.com travel article image",
+      "url": "https://emprecious.com/wp-content/uploads/2018/08/IMG_4274-min.jpg"
+    },
+    {
+      "file": "產區介紹照片/03-spec-3.jpg",
+      "query": "Tochigi strawberry Tochiaika",
+      "source": "File:Cut Tochiaika.jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cut%20Tochiaika.jpg"
+    },
+    {
+      "file": "餐點搭配照片/04-pair-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Shinshu soba photo",
+      "url": "產區介紹照片/04-spec-1.jpg"
+    },
+    {
+      "file": "產區介紹照片/04-sight-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Tatsuno park photo",
+      "url": "產區介紹照片/04-sight-2.jpg"
+    },
+    {
+      "file": "產區介紹照片/04-spec-3.jpg",
+      "query": "Nagano apple farm",
+      "source": "File:Apple Farm.jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Apple%20Farm.jpg"
+    },
+    {
+      "file": "餐點搭配照片/05-pair-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Tango barazushi photo",
+      "url": "產區介紹照片/05-spec-2.jpg"
+    },
+    {
+      "file": "產區介紹照片/05-sight-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Kyoto coast/bay photo",
+      "url": "產區介紹照片/01-sight-3.jpg"
+    },
+    {
+      "file": "產區介紹照片/05-spec-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Tango rice terrace photo",
+      "url": "產區介紹照片/05-sight-2.jpg"
+    },
+    {
+      "file": "餐點搭配照片/06-pair-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real yuzu photo",
+      "url": "產區介紹照片/06-spec-1.jpg"
+    },
+    {
+      "file": "產區介紹照片/06-sight-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Ogose grove photo",
+      "url": "產區介紹照片/06-sight-2.jpg"
+    },
+    {
+      "file": "產區介紹照片/06-spec-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Sayama tea field photo",
+      "url": "產區介紹照片/06-spec-2.jpg"
+    },
+    {
+      "file": "餐點搭配照片/07-pair-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Tamba seasonal food photo",
+      "url": "產區介紹照片/07-spec-2.jpg"
+    },
+    {
+      "file": "產區介紹照片/07-sight-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Tamba town/castle-area photo",
+      "url": "產區介紹照片/07-sight-1.jpg"
+    },
+    {
+      "file": "產區介紹照片/07-spec-3.jpg",
+      "query": "local real-photo fallback",
+      "source": "reused real Tamba black soybean photo",
+      "url": "產區介紹照片/07-spec-1.jpg"
+    }
+  ],
+  "failures": []
+}
