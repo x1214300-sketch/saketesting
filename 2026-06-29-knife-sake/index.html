@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#FDFBF7">
+<title>2026/6/29 刀酒品飲會 · Sake Tasting</title>
+
+<!-- Tailwind local runtime -->
+<script src="vendor/tailwind.min.js"></script>
+
+<!-- 字型 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- 主樣式 -->
+<link rel="stylesheet" href="styles.css?v=2.4">
+
+<!-- React 18 + Babel standalone（iOS Safari 友善，無 build step） -->
+<script src="vendor/react.production.min.js"></script>
+<script src="vendor/react-dom.production.min.js"></script>
+<script src="vendor/babel.min.js"></script>
+
+<script>
+  // 採購單提交端點 — Google Apps Script Web App
+  // 部署文檔：backend/SETUP.md
+  // 若為 null，會在 console 印出 payload 供除錯
+  window.SAKE_ORDER_ENDPOINT = "https://script.google.com/macros/s/AKfycbx5BEYIvwZWXOu1Mn4EOk3l7f-TIUchbBfoMFz_8FJRBXJXs_0j0B2C1YW4RoTb_un-Cw/exec";
+  window.SAKE_DEFAULT_EVENT_ID = "2026-06-29-knife-sake";
+</script>
+</head>
+<body>
+
+<div id="root" class="min-h-screen"></div>
+
+<noscript>
+  <div style="padding:24px;text-align:center;font-family:serif">
+    本網站需啟用 JavaScript。
+  </div>
+</noscript>
+
+<!-- 主應用（JSX，由本機 Babel 明確轉譯） -->
+<script>
+  fetch("app.js?v=2.6")
+    .then(response => {
+      if (!response.ok) throw new Error(`app.js 載入失敗：${response.status}`);
+      return response.text();
+    })
+    .then(source => {
+      const compiled = Babel.transform(source, {
+        presets: [["react", { runtime: "classic" }]],
+        sourceType: "script"
+      }).code;
+      (0, eval)(compiled);
+    })
+    .catch(err => {
+      document.getElementById("root").innerHTML =
+        `<div class="p-6 text-center text-rose-600">網站啟動失敗：${err.message}</div>`;
+    });
+</script>
+
+</body>
+</html>
