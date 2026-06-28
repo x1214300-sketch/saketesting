@@ -42,8 +42,25 @@
   </div>
 </noscript>
 
-<!-- 主應用（JSX，由 Babel 即時轉譯） -->
-<script type="text/babel" data-presets="react" src="app.js?v=2.8"></script>
+<!-- 主應用（JSX，由 Babel 明確以 classic runtime 轉譯） -->
+<script>
+  fetch("app.js?v=2.9")
+    .then(response => {
+      if (!response.ok) throw new Error(`app.js 載入失敗：${response.status}`);
+      return response.text();
+    })
+    .then(source => {
+      const compiled = Babel.transform(source, {
+        presets: [["react", { runtime: "classic" }]],
+        sourceType: "script"
+      }).code;
+      (0, eval)(compiled);
+    })
+    .catch(err => {
+      document.getElementById("root").innerHTML =
+        `<div class="p-6 text-center text-rose-600">網站啟動失敗：${err.message}</div>`;
+    });
+</script>
 
 </body>
 </html>
