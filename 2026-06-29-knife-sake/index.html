@@ -8,8 +8,8 @@
 <meta name="theme-color" content="#FDFBF7">
 <title>2026/6/29 刀酒品飲會 · Sake Tasting</title>
 
-<!-- Tailwind local runtime -->
-<script src="vendor/tailwind.min.js"></script>
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
 
 <!-- 字型 -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,9 +20,9 @@
 <link rel="stylesheet" href="styles.css?v=2.4">
 
 <!-- React 18 + Babel standalone（iOS Safari 友善，無 build step） -->
-<script src="vendor/react.production.min.js"></script>
-<script src="vendor/react-dom.production.min.js"></script>
-<script src="vendor/babel.min.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
 <script>
   // 採購單提交端點 — Google Apps Script Web App
@@ -42,25 +42,8 @@
   </div>
 </noscript>
 
-<!-- 主應用（JSX，由本機 Babel 明確轉譯） -->
-<script>
-  fetch("app.js?v=2.6")
-    .then(response => {
-      if (!response.ok) throw new Error(`app.js 載入失敗：${response.status}`);
-      return response.text();
-    })
-    .then(source => {
-      const compiled = Babel.transform(source, {
-        presets: [["react", { runtime: "classic" }]],
-        sourceType: "script"
-      }).code;
-      (0, eval)(compiled);
-    })
-    .catch(err => {
-      document.getElementById("root").innerHTML =
-        `<div class="p-6 text-center text-rose-600">網站啟動失敗：${err.message}</div>`;
-    });
-</script>
+<!-- 主應用（JSX，由 Babel 即時轉譯） -->
+<script type="text/babel" data-presets="react" src="app.js?v=2.7"></script>
 
 </body>
 </html>
