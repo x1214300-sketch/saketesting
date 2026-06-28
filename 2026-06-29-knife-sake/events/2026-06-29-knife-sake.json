@@ -1,0 +1,732 @@
+{
+  "meta": {
+    "version": "event-2026-06-29",
+    "eventId": "2026-06-29-knife-sake",
+    "eventName": "2026/6/29 刀酒品飲會",
+    "eventDate": "2026-06-29",
+    "verifiedNotes": "酒款核心資料依「我需要給的全部酒款資訊.xlsx」629 sheet；同酒造內容沿用第一場既有資料；新增圖片來源記錄於 data/events/2026-06-29-knife-sake/image-sources.json。",
+    "ssiSource": "https://ssi-sake.jp/ — SSI 4 タイプ分類法",
+    "priceNote": "價格依 629 sheet 的餐廳價欄位。"
+  },
+  "stores": [
+    "觀醬手",
+    "鱻將",
+    "KOJI",
+    "琢鮨",
+    "雷焱",
+    "彧割烹",
+    "鮨中澤",
+    "枡和",
+    "南涼"
+  ],
+  "sakes": [
+    {
+      "id": 1,
+      "bottleImage": "assets/events/2026-06-29-knife-sake/bottles/01.jpeg",
+      "name": "加佐一陽 Hi Summer",
+      "fullName": "加佐一陽 Hi Summer純米生原酒 720ml",
+      "type": "純米生原酒",
+      "volume": "720ml",
+      "region": "京都府",
+      "brewery": "池田酒造",
+      "rice": "麹米:山田錦、掛米:雄町",
+      "polish": "麹米55%、掛米60%",
+      "abv": "15%",
+      "smv": 1.0,
+      "smvLabel": "1",
+      "acidity": 1.7,
+      "acidityLabel": "1.7",
+      "price": 1080,
+      "ssi": {
+        "x": 38,
+        "y": 42
+      },
+      "ssiQuadrant": "爽酒",
+      "ssiReason": "依 629 資料中的香氣、口感與酒款規格判斷：爽酒。",
+      "aromaTags": [
+        "夏季限定",
+        "直汲鮮度",
+        "清爽酸感",
+        "雄町旨味"
+      ],
+      "aromaDesc": "香氣以清爽米香、青蘋果、白葡萄與淡淡柑橘皮為主，直汲生原酒保留剛榨出的鮮度，聞起來輕快、透明，帶一點夏季限定酒常見的微微氣泡感與清涼感。雄町帶來柔和米旨，但香氣不走濃艷路線，而是乾淨、明亮、適合開場。",
+      "tasteDesc": "入口清澈俐落，酸度先拉出節奏，接著出現雄町的圓潤旨味與生原酒的新鮮感。酒體不厚重，尾韻乾淨，適合搭配白身魚、鹽烤香魚或炸海鮮，能把油脂與鹹鮮感收得很清爽。",
+      "breweryStorySlides": [
+        {
+          "title": "海之京都的小而堅實酒藏",
+          "desc": "池田酒造於 1879 年創立於京都舞鶴，由良川流向日本海的土地讓酒款自然帶著海港城市的清爽感。酒造曾在昭和末期停釀 20 餘年，後來重新出發，選擇以小規模、純米酒為核心，慢慢建立「池田酒造的味道」。",
+          "img": "assets/events/2026-06-29-knife-sake/brewery/池田-1.jpg",
+          "source": "活動素材 / 既有圖片庫"
+        },
+        {
+          "title": "看得見農家的米，釀得出土地的甜",
+          "desc": "酒造重視與農家面對面的關係，逐步轉向使用舞鶴在地低農藥米，並相信清酒不是單純加工品，而是土地與農業的延伸。無添加釀造酒精與酵素劑，靠米、麴、水與手工細節引出自然甜味與旨味。",
+          "img": "assets/events/2026-06-29-knife-sake/brewery/池田-2.jpg",
+          "source": "活動素材 / 既有圖片庫"
+        },
+        {
+          "title": "舞鶴風土與夏酒節奏",
+          "desc": "舞鶴靠近日本海，海風、港町飲食與季節感鮮明。Hi Summer 以直汲生原酒的鮮度呈現清爽酸感與米旨味，適合把它放在夏季開胃、海鮮與鹽味料理的情境中介紹。",
+          "img": "assets/events/2026-06-29-knife-sake/brewery/池田-3.jpg",
+          "source": "活動素材 / 既有圖片庫"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "白身魚薄造佐柑橘",
+          "type": "清爽開胃",
+          "reason": "直汲鮮度與酸度能拉高白身魚甜味，讓油脂收尾更乾淨。",
+          "img": "assets/events/2026-06-29-knife-sake/pairing/white-fish.jpg"
+        },
+        {
+          "title": "鹽烤香魚",
+          "type": "季節感搭配",
+          "reason": "夏季限定酒的清爽感與香魚微苦、炭香形成俐落節奏。",
+          "img": "assets/events/2026-06-29-knife-sake/pairing/grilled-fish.jpg"
+        },
+        {
+          "title": "炸海鮮佐檸檬",
+          "type": "解膩搭配",
+          "reason": "生原酒的旨味承接炸物，明亮酸度負責清口。",
+          "img": "餐點搭配照片/01-pair-3.jpg"
+        }
+      ],
+      "discussionPrompt": "客人想點一款適合夏天喝起來清爽的酒款，身為老闆的你，會如何推薦這款加佐一陽 Hi Summer呢？",
+      "sightseeing": [
+        {
+          "title": "舞鶴赤れんがパーク（紅磚倉庫群）",
+          "desc": "明治時代舊海軍鎮守府的歷史建築群，是日劇與電影常見拍攝地。",
+          "img": "assets/events/2026-06-29-knife-sake/region/01-sight-1.jpg"
+        },
+        {
+          "title": "五老ヶ岳展望台",
+          "desc": "360 度全景被選為『近畿百景第 1 位』，可一覽舞鶴灣與市區。",
+          "img": "assets/events/2026-06-29-knife-sake/region/01-sight-2.jpg"
+        },
+        {
+          "title": "舞鶴灣",
+          "img": "assets/events/2026-06-29-knife-sake/region/01-sight-3.jpg",
+          "desc": "舞鶴面向日本海，港灣與海風形塑出這款酒適合海鮮料理的清亮印象。"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "舞鶴蟹／丹後牡蠣",
+          "desc": "舞鶴港為京都府最大漁港，冬季舞鶴蟹與丹後牡蠣為日本海珍味。",
+          "img": "assets/events/2026-06-29-knife-sake/region/01-spec-1.jpg"
+        },
+        {
+          "title": "万願寺甘とう（萬願寺甜辣椒）",
+          "desc": "舞鶴發祥的京都品牌蔬菜，肉厚甘甜微辣。",
+          "img": "assets/events/2026-06-29-knife-sake/region/01-spec-2.jpg"
+        },
+        {
+          "title": "丹後米",
+          "img": "assets/events/2026-06-29-knife-sake/region/丹後越光米.jpg",
+          "desc": "丹後地區稻作與海港飲食並存，米香與鮮味是餐桌上最有地方感的連結。"
+        }
+      ],
+      "sources": [
+        "我需要給的全部酒款資訊.xlsx：629 sheet"
+      ],
+      "regionMap": {
+        "label": "京都府舞鶴市",
+        "query": "池田酒造 京都府 舞鶴市",
+        "lat": 35.47,
+        "lng": 135.39,
+        "pinX": 45,
+        "pinY": 73
+      }
+    },
+    {
+      "id": 2,
+      "bottleImage": "assets/events/2026-06-29-knife-sake/bottles/02.jpeg",
+      "name": "菱湖 越光米 90",
+      "fullName": "菱湖 越光米 90 純米酒 720ml",
+      "type": "純米酒",
+      "volume": "720ml",
+      "region": "新潟縣",
+      "brewery": "峰乃白梅酒造",
+      "rice": "越光米",
+      "polish": "90%",
+      "abv": "15%",
+      "smv": -4.0,
+      "smvLabel": "-4",
+      "acidity": 1.5,
+      "acidityLabel": "1.5",
+      "price": 1030,
+      "ssi": {
+        "x": 62,
+        "y": 38
+      },
+      "ssiQuadrant": "醇酒",
+      "ssiReason": "依 629 資料中的香氣、口感與酒款規格判斷：醇酒。",
+      "aromaTags": [
+        "低精白",
+        "米旨味",
+        "越光米",
+        "內斂穩定"
+      ],
+      "aromaDesc": "香氣比一般吟釀更內斂，重點在蒸米、米麴、穀物甜感與淡淡乳酸調性。90% 精米沒有刻意追求華麗果香，而是把越光米的樸實米香和土地感留在前段，聞起來穩定、溫和、有米飯剛蒸好的暖意。",
+      "tasteDesc": "入口能感受到米的厚度與柔和旨味，酸度不尖銳，甜感也收得穩。低精白保留較多米的輪廓，但雜味控制乾淨，適合用來說明精米步合不等於高低好壞，而是風味設計不同。",
+      "breweryStorySlides": [
+        {
+          "title": "越後三梅之一，角田山腳的老酒藏",
+          "desc": "峰乃白梅酒造創立於 1624 年，是新潟縣歷史深厚的酒藏之一，與其他酒藏並稱「越後三梅」。酒藏座落於越後平野與角田山麓之間，長年承接新潟米鄉與山海風土。",
+          "img": "assets/events/2026-06-29-knife-sake/sakemaru/ryoko-1.jpg",
+          "source": "https://tw.sakemaru.me/blogs/%E9%85%92%E9%80%A0/%E5%B3%B0%E4%B9%83%E7%99%BD%E6%A2%85%E9%85%92%E9%80%A0"
+        },
+        {
+          "title": "從淡麗辛口到芳醇旨口的挑戰",
+          "desc": "酒造不只停留在新潟常見的淡麗辛口印象，也以菱湖系列挑戰更芳醇、有旨味的風格。這讓菱湖越光米 90 可以被介紹成「低精白但乾淨、米味清楚」的風土型作品。",
+          "img": "assets/events/2026-06-29-knife-sake/sakemaru/ryoko-2.jpg",
+          "source": "https://tw.sakemaru.me/blogs/%E9%85%92%E9%80%A0/%E5%B3%B0%E4%B9%83%E7%99%BD%E6%A2%85%E9%85%92%E9%80%A0"
+        },
+        {
+          "title": "米、水與野積杜氏的技術",
+          "desc": "峰乃白梅重視酒米、水與藏人技術。彌彥、角田山系伏流水帶來清澈基底，野積杜氏的技術則讓辛口到芳醇型都能維持穩定品質。",
+          "img": "assets/events/2026-06-29-knife-sake/sakemaru/ryoko-3.jpg",
+          "source": "https://tw.sakemaru.me/blogs/%E9%85%92%E9%80%A0/%E5%B3%B0%E4%B9%83%E7%99%BD%E6%A2%85%E9%85%92%E9%80%A0"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "烤飯糰味噌燒",
+          "type": "米旨味共鳴",
+          "reason": "90% 精米保留米的輪廓，與味噌焦香、米香相互放大。",
+          "img": "assets/events/2026-06-29-knife-sake/imported/miso-yaki-onigiri.jpg"
+        },
+        {
+          "title": "鹽烤雞腿肉",
+          "type": "旨味搭配",
+          "reason": "米的厚度能接住雞肉油脂，收尾仍保持乾淨。",
+          "img": "餐點搭配照片/02-pair-3.jpg"
+        },
+        {
+          "title": "菇類炊飯",
+          "type": "風土搭配",
+          "reason": "越光米系酒款適合與米飯、菇類、昆布系旨味搭配。",
+          "img": "assets/events/2026-06-29-knife-sake/imported/mushroom-takikomi-gohan.jpg"
+        }
+      ],
+      "discussionPrompt": "客人對於90精米步合很有興趣，詢問適合搭什麼料理時，您會怎麼推薦？",
+      "sightseeing": [
+        {
+          "title": "角田山與越後平野",
+          "desc": "峰乃白梅酒造位於新潟越後平野一帶，角田山、稻田與清冽水系構成菱湖風土系列的背景。",
+          "img": "產區介紹照片/角田山與越後平野.jpg"
+        },
+        {
+          "title": "彌彦神社周邊",
+          "desc": "新潟代表性的信仰與觀光地，能連結越後米鄉的地方印象。",
+          "img": "產區介紹照片/彌彦神社周邊.avif"
+        },
+        {
+          "title": "佐渡汽船與日本海沿岸",
+          "desc": "新潟面向日本海，港町、海產與米鄉文化讓這款米旨味酒更容易被放進餐桌情境。",
+          "img": "產區介紹照片/佐渡汽船與日本海沿岸.webp"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "新潟越光米",
+          "desc": "這款菱湖以在地越光米與低精白概念呈現米的原味與永續風土。",
+          "img": "產區介紹照片/新潟越光米.jpeg"
+        },
+        {
+          "title": "笹團子",
+          "desc": "新潟經典米食甜點，能補充米香、草本與地方飲食記憶。",
+          "img": "assets/events/2026-06-29-knife-sake/imported/sasadango.jpg"
+        },
+        {
+          "title": "栃尾油揚",
+          "desc": "厚實豆皮帶有油脂與大豆香，適合用來示範菱湖的米旨味與清爽收尾。",
+          "img": "assets/events/2026-06-29-knife-sake/imported/tochio-aburaage.jpg"
+        }
+      ],
+      "sources": [
+        "我需要給的全部酒款資訊.xlsx：629 sheet"
+      ],
+      "regionMap": {
+        "label": "新潟縣新潟市西蒲區",
+        "query": "峰乃白梅酒造 新潟県 新潟市 西蒲区",
+        "lat": 37.75,
+        "lng": 138.88,
+        "pinX": 76,
+        "pinY": 43
+      }
+    },
+    {
+      "id": 3,
+      "bottleImage": "assets/events/2026-06-29-knife-sake/bottles/03.webp",
+      "name": "聖 渡舟50 GOTH",
+      "fullName": "聖 渡舟50 GOTH 純米吟釀 720ml",
+      "type": "純米吟釀",
+      "volume": "720ml",
+      "region": "群馬縣",
+      "brewery": "聖酒造",
+      "rice": "滋賀渡船6號",
+      "polish": "50%",
+      "abv": "14%",
+      "smv": -1.0,
+      "smvLabel": "-1",
+      "acidity": 1.3,
+      "acidityLabel": "1.3",
+      "price": 1090,
+      "ssi": {
+        "x": 38,
+        "y": 74
+      },
+      "ssiQuadrant": "薰酒",
+      "ssiReason": "依 629 資料中的香氣、口感與酒款規格判斷：薰酒。",
+      "aromaTags": [
+        "哈密瓜",
+        "鳳梨",
+        "酒母活性",
+        "清爽酸"
+      ],
+      "aromaDesc": "香氣核心是紅肉哈密瓜、鳳梨與熟果甜香，帶一點柔和乳脂感，香氣高度明顯但不厚濁。酒母活性酒的特色讓果香有活潑感，聞起來有現代純米吟釀的明亮輪廓。",
+      "tasteDesc": "入口有紅肉哈密瓜般的濃郁甜韻，接著由漂亮酸度把甜感拉直，尾段帶柑橘皮般微苦收束。整體不是沉重甜酒，而是以高香氣、清爽酸度與細緻甜感形成平衡。",
+      "breweryStorySlides": [
+        {
+          "title": "赤城山西南麓，八代傳承的聖",
+          "desc": "聖酒造創立於 1841 年，位於群馬渋川、赤城山西南麓。酒名「聖」取自古語中澄澈潔淨之酒的意象，八代 180 年以來承接家族技術，在冬季清冷空氣與自然水系中持續釀造。",
+          "img": "assets/events/2026-06-29-knife-sake/brewery/聖-1.jpg",
+          "source": "https://www.hijiri-sake.co.jp/pages/about"
+        },
+        {
+          "title": "螢火蟲與伏流水的釀酒環境",
+          "desc": "酒造周邊有利根川與赤城山自然水系，官方故事也提到螢火蟲飛舞、綠意豐富的環境。這種清冽感對應到 Hizirizm 的透明酸度，也讓生酛的旨味不顯沉重。",
+          "img": "assets/events/2026-06-29-knife-sake/brewery/聖-2.jpg",
+          "source": "https://www.hijiri-sake.co.jp/pages/about"
+        },
+        {
+          "title": "渡舟米帶來的優雅輪廓",
+          "desc": "這款使用滋賀渡船六號，也就是山田錦的母系品種之一。渡舟米使酒體帶有柔和圓潤的米旨與平衡酸度，荔枝、石榴般果香之後，留下微微栗子熟成感，是聖酒造展現進化感的作品。",
+          "img": "assets/events/2026-06-29-knife-sake/brewery/聖-3.jpg",
+          "source": "https://www.hijiri-sake.co.jp/pages/about"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "水果番茄與布拉塔",
+          "type": "香氣延伸",
+          "reason": "哈密瓜與鳳梨香能和番茄甜酸、乳香產生明亮連結。",
+          "img": "餐點搭配照片/03-pair-1.jpg"
+        },
+        {
+          "title": "炙燒干貝",
+          "type": "鮮甜搭配",
+          "reason": "酒款果香襯托干貝甜味，微苦尾韻讓整體不膩。",
+          "img": "餐點搭配照片/炙燒干貝.jpeg"
+        },
+        {
+          "title": "上州牛",
+          "type": "產地搭配",
+          "reason": "沿用群馬風土印象，清爽酸度能帶走牛肉油脂。",
+          "img": "餐點搭配照片/上州牛排.jpg"
+        }
+      ],
+      "discussionPrompt": "這款酒喝起來有紅肉哈密瓜的濃郁甜韻和漂亮的酸度，你們會推薦搭配什麼樣特性的料理？原因？",
+      "sightseeing": [
+        {
+          "title": "伊香保溫泉",
+          "desc": "群馬名湯，石階街與黃金之湯、白銀之湯雙泉聞名。距渋川聖酒造約 20 分鐘車程。",
+          "img": "assets/events/2026-06-29-knife-sake/region/02-sight-1.jpg"
+        },
+        {
+          "title": "赤城山",
+          "desc": "日本百名山之一，山頂的大沼湖在冬季可滑冰、釣公魚。",
+          "img": "assets/events/2026-06-29-knife-sake/region/赤城山.jpg"
+        },
+        {
+          "title": "榛名湖",
+          "img": "assets/events/2026-06-29-knife-sake/region/榛名湖.jpg",
+          "desc": "群馬山地湖泊與溫泉文化相連，帶出聖酒造所在地周邊清冷、沉靜的風土感。"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "渋川蒟蒻",
+          "desc": "渋川市為日本蒟蒻產量首位之一，蒟蒻製品為當地代表名物。",
+          "img": "產區介紹照片/02-spec-1.jpg"
+        },
+        {
+          "title": "群馬創作こけし",
+          "desc": "群馬縣佔全國 7 成市佔的創作木偶，渋川為主要產地。",
+          "img": "產區介紹照片/02-spec-2.jpg"
+        },
+        {
+          "title": "水澤うどん",
+          "img": "產區介紹照片/02-spec-3.jpg",
+          "desc": "群馬代表麵食之一，滑順麵體與醬汁旨味適合搭配有輪廓的米香系清酒。"
+        }
+      ],
+      "sources": [
+        "我需要給的全部酒款資訊.xlsx：629 sheet"
+      ],
+      "regionMap": {
+        "label": "群馬縣渋川市",
+        "query": "聖酒造 群馬県 渋川市",
+        "lat": 36.49,
+        "lng": 139.0,
+        "pinX": 70,
+        "pinY": 48
+      }
+    },
+    {
+      "id": 4,
+      "bottleImage": "assets/events/2026-06-29-knife-sake/bottles/04-updated.png",
+      "name": "駒泉 鮭魚",
+      "fullName": "駒泉 鮭魚 純米吟釀 720ml",
+      "type": "純米吟釀",
+      "volume": "720ml",
+      "region": "青森県",
+      "brewery": "盛田庄兵衛",
+      "rice": "華吹雪",
+      "polish": "55%",
+      "abv": "15%",
+      "smv": 4.0,
+      "smvLabel": "+4",
+      "acidity": null,
+      "acidityLabel": "未公開",
+      "price": 1270,
+      "ssi": {
+        "x": 40,
+        "y": 35
+      },
+      "ssiQuadrant": "爽酒",
+      "ssiReason": "依 629 資料中的香氣、口感與酒款規格判斷：爽酒。",
+      "aromaTags": [
+        "辛口",
+        "鮭魚專用",
+        "旨味",
+        "清爽收尾"
+      ],
+      "aromaDesc": "香氣以清爽米香、淡淡青竹感與乾淨穀物調性為主，不走華麗果香路線。設計重點是讓鮭魚油脂和鹹鮮感成為主角，因此香氣保持節制，像一款能貼近料理的食中酒。",
+      "tasteDesc": "入口乾淨辛口，旨味足以接住鮭魚的油脂甜味，尾韻俐落不拖泥帶水。除了鹽烤鮭魚，也能搭配味噌奶油鮭魚、昆布締め白身魚或炙燒魚皮等油脂較明確的料理。",
+      "breweryStorySlides": [
+        {
+          "title": "七戶町的城下町酒藏",
+          "desc": "盛田庄兵衛位於青森七戶町，周邊保留城下町與神社文化，也以自然景觀和名馬產地聞名。酒藏在這片冷涼土地延續約 250 年，形成穩健、正直的地方酒風格。",
+          "img": "assets/events/2026-06-29-knife-sake/brewery/morita-shobe-1.webp",
+          "source": "酒造故事照片/盛田庄兵衛.webp"
+        },
+        {
+          "title": "南部杜氏的基本功",
+          "desc": "酒藏重視南部杜氏傳統技法，並把回歸初心、徹底基本功視為釀酒核心。這種踏實風格反映在駒泉清爽辛口、適合餐桌的酒質上。",
+          "img": "assets/events/2026-06-29-knife-sake/brewery/morita-shobe-2.jpg",
+          "source": "酒造故事照片/盛田庄兵衛2.jpg"
+        },
+        {
+          "title": "以食中酒延伸地方海味",
+          "desc": "青森擁有豐富海產與冷涼氣候，駒泉「おさかな系列」把酒款直接放進魚料理情境。鮭魚款的設計重點不是搶走料理風味，而是襯托油脂甜味並俐落收尾。",
+          "img": "餐點搭配照片/05-pair-2.jpg",
+          "source": "活動素材 / 既有圖片庫"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "鹽烤鮭魚",
+          "type": "指定搭配",
+          "reason": "酒款為鮭魚設計，辛口結構能凸顯油脂甜味並清爽收尾。",
+          "img": "餐點搭配照片/05-pair-2.jpg"
+        },
+        {
+          "title": "味噌奶油鮭魚",
+          "type": "油脂平衡",
+          "reason": "旨味能接住奶油與味噌，辛口尾韻避免厚重。",
+          "img": "餐點搭配照片/味噌奶油鮭魚.webp"
+        },
+        {
+          "title": "比目魚昆布締め",
+          "type": "白身魚搭配",
+          "reason": "乾淨結構適合襯托白身魚細緻甜味。",
+          "img": "餐點搭配照片/比目魚昆布締め.webp"
+        }
+      ],
+      "discussionPrompt": "如果客人不想只搭鮭魚，想知道這款辛口食中酒還能配今天哪一道魚料理或炙燒料理，您會怎麼推薦？",
+      "sightseeing": [
+        {
+          "title": "七戶城跡與城下町",
+          "desc": "酒藏位於青森七戶町，城跡與神社保留室町時代風貌。",
+          "img": "餐點搭配照片/七戶城跡與城下町.avif"
+        },
+        {
+          "title": "八甲田山麓自然景觀",
+          "desc": "青森冷涼氣候與清澈水源，支撐南部杜氏傳統釀造。",
+          "img": "產區介紹照片/八甲田山麓自然景觀.webp"
+        },
+        {
+          "title": "奧入瀨溪流",
+          "desc": "青森代表性的溪流景觀，清冷水系與自然環境能連結駒泉清爽辛口的印象。",
+          "img": "產區介紹照片/奧入瀨溪流.webp"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "青森鮭魚與海產",
+          "desc": "駒泉鮭魚本身就是為鮭魚料理設計的餐酒款。",
+          "img": "餐點搭配照片/05-pair-2.jpg"
+        },
+        {
+          "title": "青森長芋與根菜",
+          "desc": "清爽辛口能搭配青森常見根菜料理與炭烤風味。",
+          "img": "產區介紹照片/04-spec-2.jpg"
+        },
+        {
+          "title": "青森蘋果",
+          "desc": "青森代表名產，清脆甜酸的印象也能幫助說明這款酒乾淨、俐落的收尾。",
+          "img": "產區介紹照片/04-spec-3.jpg"
+        }
+      ],
+      "sources": [
+        "我需要給的全部酒款資訊.xlsx：629 sheet"
+      ],
+      "regionMap": {
+        "label": "青森縣七戶町",
+        "query": "盛田庄兵衛 青森県 七戸町",
+        "lat": 40.7,
+        "lng": 141.15,
+        "pinX": 83,
+        "pinY": 23
+      }
+    },
+    {
+      "id": 5,
+      "bottleImage": "assets/events/2026-06-29-knife-sake/bottles/05.jpg",
+      "name": "篠峯 山田錦 純米超辛口",
+      "fullName": "篠峯 山田錦 純米 超辛無濾過生原酒 720ml",
+      "type": "純米 超辛無濾過生原酒",
+      "volume": "720ml",
+      "region": "奈良縣",
+      "brewery": "千代酒造",
+      "rice": "櫛羅産山田錦",
+      "polish": "66%",
+      "abv": "16%",
+      "smv": 10.0,
+      "smvLabel": "10",
+      "acidity": 2.2,
+      "acidityLabel": "2.2",
+      "price": 960,
+      "ssi": {
+        "x": 66,
+        "y": 36
+      },
+      "ssiQuadrant": "醇酒",
+      "ssiReason": "依 629 資料中的香氣、口感與酒款規格判斷：醇酒。",
+      "aromaTags": [
+        "超辛口",
+        "高酸",
+        "山田錦",
+        "無濾過生原酒"
+      ],
+      "aromaDesc": "香氣不是華麗吟釀香，而是以米旨味、乳酸、礦物感與生原酒的鮮明氣息為主。山田錦帶出乾淨米香，無濾過生原酒讓香氣更有張力，但整體仍偏內斂、扎實。",
+      "tasteDesc": "入口先有米的甜旨感，接著高酸與 +10 辛口感快速拉出俐落骨架。它不是辣椒式的刺激，也不是單純燒喉嚨，而是酸度、酒體與辛口收尾一起形成乾爽感，適合油脂、炭烤與發酵風味。",
+      "breweryStorySlides": [
+        {
+          "title": "葛城山腳的千代酒造",
+          "desc": "千代酒造位於奈良與大阪之間的葛城山腳，創立於 1873 年。酒造重視本地材料與自然環境，希望讓酒款喝起來能聯想到奈良山麓的土地氣息。",
+          "img": "assets/events/2026-06-29-knife-sake/sakemaru/chiyo-1.jpg",
+          "source": "https://tw.sakemaru.me/blogs/%E9%85%92%E9%80%A0/%E5%8D%83%E4%BB%A3%E9%85%92%E9%80%A0"
+        },
+        {
+          "title": "以餐桌為核心的酒造理念",
+          "desc": "千代酒造追求的是能與料理搭配的日本酒，而不是只靠華麗香氣吸引注意。篠峯的酸度、旨味與俐落收尾，正適合放在餐中承接油脂與發酵風味。",
+          "img": "assets/events/2026-06-29-knife-sake/sakemaru/chiyo-2.jpg",
+          "source": "https://tw.sakemaru.me/blogs/%E9%85%92%E9%80%A0/%E5%8D%83%E4%BB%A3%E9%85%92%E9%80%A0"
+        },
+        {
+          "title": "山田錦、水與謹慎釀造",
+          "desc": "酒造使用自家栽培與契作栽培的酒米，並以葛城山伏流水釀造。略帶礦物感的軟水、基礎技術與細緻感性，形成篠峯乾淨後段、俐落酸味與適度旨味的輪廓。",
+          "img": "assets/events/2026-06-29-knife-sake/sakemaru/chiyo-3.jpg",
+          "source": "https://tw.sakemaru.me/blogs/%E9%85%92%E9%80%A0/%E5%8D%83%E4%BB%A3%E9%85%92%E9%80%A0"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "炭烤雞翅",
+          "type": "辛口解膩",
+          "reason": "高酸與超辛口能切開炭烤油脂，米旨味接住肉汁。",
+          "img": "餐點搭配照片/炭烤雞翅.jpg"
+        },
+        {
+          "title": "柚庵燒魚",
+          "type": "酸旨搭配",
+          "reason": "魚肉醬香與酒款酸度、無濾過的厚度形成層次。",
+          "img": "餐點搭配照片/柚庵燒魚.jpg"
+        },
+        {
+          "title": "奈良漬奶油乳酪",
+          "type": "地方感搭配",
+          "reason": "奈良漬的發酵香與辛口酒的俐落尾韻相互平衡。",
+          "img": "餐點搭配照片/奈良漬奶油乳酪.jpg"
+        }
+      ],
+      "discussionPrompt": "客人詢問這款酒喝起來會很辣、很燒喉嚨嗎？您會如何回答？",
+      "sightseeing": [
+        {
+          "title": "葛城山麓",
+          "desc": "千代酒造位於奈良御所市葛城山腳，山水與古道形塑酒款的礦物感與酸度印象。",
+          "img": "產區介紹照片/葛城山麓.jpg"
+        },
+        {
+          "title": "葛城古道與古社巡禮",
+          "desc": "奈良盆地南部保留古代信仰與修行文化，適合連結篠峯的土地敘事。",
+          "img": "產區介紹照片/葛城古道與古社巡禮.webp"
+        },
+        {
+          "title": "高鴨神社",
+          "desc": "御所市一帶古社與山麓風景相連，能延伸篠峯「土地、山水、修行文化」的故事。",
+          "img": "產區介紹照片/高鴨神社.jpg"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "奈良漬",
+          "desc": "發酵瓜菜與辛口酒能形成鹹香、酸度與旨味的搭配。",
+          "img": "產區介紹照片/奈良漬.webp"
+        },
+        {
+          "title": "柿葉壽司",
+          "desc": "奈良代表性地方料理，適合與超辛口、酸度明確的酒款搭配。",
+          "img": "產區介紹照片/柿葉壽司.jpeg"
+        },
+        {
+          "title": "大和茶",
+          "desc": "奈良傳統茶文化帶有清香與微澀感，可呼應篠峯的俐落酸度與收尾。",
+          "img": "產區介紹照片/大和茶.jpeg"
+        }
+      ],
+      "sources": [
+        "我需要給的全部酒款資訊.xlsx：629 sheet"
+      ],
+      "regionMap": {
+        "label": "奈良縣御所市",
+        "query": "千代酒造 奈良県 御所市 櫛羅",
+        "lat": 34.46,
+        "lng": 135.72,
+        "pinX": 47,
+        "pinY": 76
+      }
+    },
+    {
+      "id": 6,
+      "bottleImage": "assets/events/2026-06-29-knife-sake/bottles/06-updated.webp",
+      "name": "麒麟山 lemonade",
+      "fullName": "麒麟山 lemonade 300ml",
+      "type": "清酒檸檬酒",
+      "volume": "300ml",
+      "region": "新潟縣",
+      "brewery": "麒麟山酒造",
+      "rice": "新潟奥阿賀産米",
+      "polish": "",
+      "abv": "5%",
+      "smv": null,
+      "smvLabel": "未公開",
+      "acidity": null,
+      "acidityLabel": "未公開",
+      "price": 310,
+      "ssi": {
+        "x": 35,
+        "y": 30
+      },
+      "ssiQuadrant": "爽酒",
+      "ssiReason": "依 629 資料中的香氣、口感與酒款規格判斷：爽酒。",
+      "aromaTags": [
+        "檸檬",
+        "低酒精",
+        "清爽微甜",
+        "餐後輕飲"
+      ],
+      "aromaDesc": "香氣以新鮮檸檬、柑橘皮、淡淡米香與微甜感為主，低酒精讓聞香很輕盈。它不是濃厚甜酒，而是像清爽檸檬飲一樣，帶有日本酒基底的柔和米旨。",
+      "tasteDesc": "入口酸甜平衡，檸檬酸感先讓口腔變清爽，接著出現米的柔和旨味與微甜尾韻。5% 酒精使整體輕鬆易飲，適合炸物、海鮮、鹽味甜點，或作為餐後收尾。",
+      "breweryStorySlides": [
+        {
+          "title": "阿賀町山水孕育的麒麟山",
+          "desc": "麒麟山酒造 1843 年創立於新潟阿賀町，酒造與阿賀野川、山間水系關係深厚。品牌長年強調「取之於新潟，回饋於新潟」，把地方米與水放在釀造核心。",
+          "img": "assets/events/2026-06-29-knife-sake/sakemaru/kirinzan-1.jpg",
+          "source": "https://tw.sakemaru.me/blogs/%E9%85%92%E9%80%A0/%E9%BA%92%E9%BA%9F%E5%B1%B1%E9%85%92%E9%80%A0"
+        },
+        {
+          "title": "奧阿賀自然與在地酒米",
+          "desc": "麒麟山酒造以當地象徵性的麒麟山為名，堅持使用新潟奧阿賀地區栽培的酒米，並與農家合作管理品質。這種從田到酒的做法，讓品牌帶有很強的地方認同。",
+          "img": "assets/events/2026-06-29-knife-sake/sakemaru/kirinzan-2.jpg",
+          "source": "https://tw.sakemaru.me/blogs/%E9%85%92%E9%80%A0/%E9%BA%92%E9%BA%9F%E5%B1%B1%E9%85%92%E9%80%A0"
+        },
+        {
+          "title": "清冽伏流水與食中酒哲學",
+          "desc": "酒造使用雪國山脈孕育出的清澈伏流水，追求清爽、俐落、餘韻乾淨的餐酒風格。Lemonade 雖是低酒精酸甜款，也能延伸這種「不搶料理、讓食材更突出」的方向。",
+          "img": "assets/events/2026-06-29-knife-sake/sakemaru/kirinzan-3.jpg",
+          "source": "https://tw.sakemaru.me/blogs/%E9%85%92%E9%80%A0/%E9%BA%92%E9%BA%9F%E5%B1%B1%E9%85%92%E9%80%A0"
+        }
+      ],
+      "pairingDetails": [
+        {
+          "title": "檸檬塔",
+          "type": "甜點搭配",
+          "reason": "檸檬香氣彼此呼應，低酒精讓甜點後段更清爽。",
+          "img": "餐點搭配照片/檸檬塔.jpg"
+        },
+        {
+          "title": "炸牡蠣",
+          "type": "清爽解膩",
+          "reason": "檸檬酒像擠上一片檸檬，能降低炸物油膩感。",
+          "img": "餐點搭配照片/炸牡蠣.jpeg"
+        },
+        {
+          "title": "鹽味乳酪蛋糕",
+          "type": "鹹甜搭配",
+          "reason": "米旨味和檸檬酸感能平衡乳酪甜味。",
+          "img": "餐點搭配照片/鹽味乳酪蛋糕.jpg"
+        }
+      ],
+      "discussionPrompt": "這款酒在做餐飲搭配時，身為專業酒水經理的你，會把它放在餐前、餐中、餐後哪個位子？為什麼？",
+      "sightseeing": [
+        {
+          "title": "阿賀野川與津川街道",
+          "desc": "麒麟山酒造位於新潟阿賀町，阿賀野川水系與山間氣候是淡麗辛口風格的背景。",
+          "img": "產區介紹照片/阿賀野川與津川街道.jpeg"
+        },
+        {
+          "title": "狐の嫁入り屋敷",
+          "desc": "津川地區代表性觀光文化，適合延伸麒麟山的地方故事。",
+          "img": "產區介紹照片/狐の嫁入り屋敷2.jpeg"
+        },
+        {
+          "title": "麒麟山公園",
+          "desc": "阿賀町代表景點之一，可眺望阿賀野川流域與山間地形，連結酒造名稱與地方印象。",
+          "img": "產區介紹照片/麒麟山公園.jpg"
+        }
+      ],
+      "specialties": [
+        {
+          "title": "新潟奧阿賀米",
+          "desc": "麒麟山 Lemonade 使用新潟奧阿賀產米釀造的日本酒為基底。",
+          "img": "產區介紹照片/06-sight-2.jpg"
+        },
+        {
+          "title": "瀨戶內檸檬",
+          "desc": "檸檬風味讓這款低酒精飲品適合餐後或炸物搭配。",
+          "img": "assets/events/2026-06-29-knife-sake/pairing/lemonade.jpg"
+        },
+        {
+          "title": "新潟笹團子",
+          "desc": "米粉與艾草香的地方甜點，適合放在餐後酸甜酒款的搭配脈絡中。",
+          "img": "assets/events/2026-06-29-knife-sake/imported/sasadango.jpg"
+        }
+      ],
+      "sources": [
+        "我需要給的全部酒款資訊.xlsx：629 sheet"
+      ],
+      "regionMap": {
+        "label": "新潟縣阿賀町",
+        "query": "麒麟山酒造 新潟県 阿賀町 津川",
+        "lat": 37.68,
+        "lng": 139.46,
+        "pinX": 79,
+        "pinY": 45
+      }
+    }
+  ]
+}
